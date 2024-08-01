@@ -13,24 +13,24 @@ img_thay_doi();
 
 // tạo hiệu ứng dãn ra cho header menu
 
-let lastScrollTop = 0;
-const menu = document.querySelector('.header_1');
+// let lastScrollTop = 0;
+// const menu = document.querySelector('.header_1');
 
-window.addEventListener('scroll', function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener('scroll', function() {
+//     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll > lastScrollTop) {
-        // Cuộn xuống
-        menu.classList.remove('expanded');
+//     if (currentScroll > lastScrollTop) {
+//         // Cuộn xuống
+//         menu.classList.remove('expanded');
 
-    } else {
-        // Cuộn lên
-        menu.classList.add('expanded');
+//     } else {
+//         // Cuộn lên
+//         menu.classList.add('expanded');
 
-    }
+//     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Đảm bảo không bị giá trị âm
-});
+//     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Đảm bảo không bị giá trị âm
+// });
 
 /*
 // tạo hiệu ứng cho các class row khi vuốt bằng thư viện AOS
