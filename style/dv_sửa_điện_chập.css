@@ -1,0 +1,184 @@
+:root{
+    --colorCenter:#e54f50;
+}
+/* Lưu ý, đây là toàn bộ css chung cho tất cả page con */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+}
+/* header */
+/* ------------------------------------------------------------- */
+
+
+.header_1{
+    border-radius: 0 0 25px 25px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 100px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+/* class này phục vụ cho hiệu ứng co dãn menu của js */
+.header_1.expanded {
+    height: 200px; /* Kích thước khi thu lại */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.header_1.expanded a {
+    font-size: 22px;
+}
+
+.header_1.expanded a:hover{
+    font-size: 30px;
+}
+
+
+.header_1.expanded #logo {
+    font-size: 50px;
+}
+
+.header_1.expanded #phoneNumber {
+    font-size: 40px;
+}
+
+
+.header_1.expanded i {
+    font-size: 50px;
+}
+
+
+
+/* kết thúc thay đổi js */
+
+
+
+#logo {
+    font-size: 70px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    color: var(--colorCenter);
+}
+
+
+/* #phoneNumber{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--colorCenter);
+}  */
+
+.header_1_menu{
+    color: var(--colorCenter);
+    font-weight: bold;
+}
+
+.header_1_btn_phone {
+    background-color: var(--colorCenter);
+    width: 50%;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+    padding-right: 3%;
+}
+
+.nav-link:hover {
+    font-size: 35px;
+    color: var(--colorCenter);
+}
+
+.header_1_menu i {
+    font-size: 60px;
+    margin-left: 22px;
+    /* margin-bottom: 50px; */
+    color: rgb(0, 85, 255);
+    margin-top: 15px;
+}
+
+.header_1_menu i:hover {
+    font-size: 85px;
+}
+
+.header_2{
+    padding-top: 300px;
+}
+
+.header_2{
+    padding-top: 300px;
+}
+
+
+.header_2 img {
+    width: 100%;
+    height: 10%;
+    background-size: cover;
+    background-position: center;
+    /* tạo lớp phủ mờ dần cho ảnh */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 1));
+    object-fit: cover;
+
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* footer */
+
+.footer {
+    background-color: #703f3f;
+    color: white;
+    padding: 50px;
+}
+
+.footer h1 {
+    font-weight: bolder;
+}
+
+.footer li {
+    font-size: 20px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* main */
+
+.main {
+    margin-top: 100px;
+}
+
+.main h1{
+    color: var(--colorCenter);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main h3{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.main img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.row {
+    margin-top: 40px;
+}
+
+
+
