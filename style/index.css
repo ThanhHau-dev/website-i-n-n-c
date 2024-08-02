@@ -86,7 +86,7 @@ body {
 
 .header_1_btn_phone {
     background-color: var(--colorCenter);
-    width: 50%;
+    width: 70%;
     font-weight: bold;
     color: white;
     border-radius: 30px;
@@ -336,7 +336,10 @@ table td {
 .footer {
     background-color: #703f3f;
     color: white;
-    padding: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 2px;
 }
 
 .footer h1 {
@@ -347,11 +350,20 @@ table td {
     font-size: 20px;
 }
 
+.footer p {
+    text-align: center;
+}
+
 
 /* --------------------------------------------------------------------------- */
 
-/* Reponsi cho table */
-@media (min-width: 601px) and (max-width: 1500px) {
+/* Reponsi cho pc màn hình nhỏ */
+@media (min-width: 950px) and (max-width: 1500px) {
+
+        .header_1_btn_phone {
+            width: 100%;
+        }
+        
         .main_2_btn{
             width: 40%;
         }
@@ -362,7 +374,7 @@ table td {
         }
 
         .main_4 form p{
-                display: none;
+            font-size: 15px;
         }
 
         .main_5_circle{
@@ -385,8 +397,76 @@ table td {
   }
 
 
+  /* reponse cho table từ 700 - 949 */
+  @media (min-width: 701px) and (max-width: 949px) {
+
+    .header_1_btn_phone {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .header_1_menu i {
+        font-size: 40px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .header_1_menu h3 {
+        font-size: 20px;
+    }
+
+    
+
+    .main_2_btn {
+        width: 50%;
+    }
+
+    .main_3_btn {
+        width: 100%;
+    }
+
+
+    .main_4 form p{
+        display: none;
+    }
+
+    .main_5_circle{
+        width: 100%;
+        height: 10px;
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .main_6 form p {
+        display: none;
+    }
+   
+    .main_7 img {
+        width: 70%;
+    }
+
+    .animated-image {
+        width: 100%; /* Đảm bảo hình ảnh phù hợp với kích thước cột */
+        animation: moveRight 1s infinite alternate; /* Áp dụng hoạt ảnh */
+    }
+    
+    @keyframes moveRight {
+        0% {
+            transform: translateX(0); /* Bắt đầu ở vị trí ban đầu */
+        }
+        100% {
+            transform: translateX(20px); /* Di chuyển sang phải 20px */
+        }
+    }
+  }
+
+
+
 /* Reponsi cho mobile */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .header {
         display: none;
     }
