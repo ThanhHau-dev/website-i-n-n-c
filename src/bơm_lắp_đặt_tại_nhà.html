@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              Tuấn Đạt – Lắp đặt máy bơm đẩy, bơm tăng áp chính hãng
+            </h1>
+
+            <p>
+              Việc tự lắp đặt máy bơm tăng áp không phải là không thể, bạn phải
+              lựa chọn công ty, đơn vị uy tín có kinh nghiệm về lắp đặt máy bơm.
+            </p>
+
+            <p>
+              Lắp đặt máy bơm tăng áp có kích thước phù hợp với hệ thống ống
+              nước hiện có. Lắp đặt máy bơm tăng áp chuẩn kỹ thuật ( có đường
+              dẫn nước riêng biệt hay cắt qua hệ thống chính tùy theo sơ đồ nhà
+              ở ) Lắp đặt máy bơm tăng áp thái dương năng Lắp đặt máy bơm tăng
+              áp đảm bảo cách nhiệt thích hợp
+            </p>
+
+            <img
+              src="../img/tăng áp.jpg"
+              alt="hình"
+            />
+
+            <h1>
+              Thiết kế và lựa chọn lắp bơm tăng áp cho thái dương năng tại nhà
+            </h1>
+
+            <p>
+              <p>
+              1.Các bước thiết kế và lựa chọn hệ thống bơm nước năng lượng mặt
+              trời được tóm tắt như sau:</p>
+              <p> + Xác định nguồn nước và dựa trên các
+              đặc tính của nguồn nước và sử dụng hết nước, hãy chọn lắp bơm tăng
+              áp cho thái dương năng thích hợp để lắp đặt.</p><p> + Xác định nhu cầu
+              nước hàng ngày hoặc hàng tuần và xác minh rằng nguồn nước sẵn có
+              trong thời gian dài có thể đáp ứng các yêu cầu.</p><p> + Xác định vị trí
+              của mảng năng lượng mặt trời.</p><p> + Xác định vị trí lắp bơm tăng áp
+              cho thái dương năng.</p><p> + Xác định chiều dài của cáp cần thiết giữa
+              mảng năng lượng mặt trời, bộ điều khiển máy bơm và máy bơm nước.</p><p> +
+              Xác định vị trí và cách thức nước sẽ được lưu trữ.</p><p> + Đo đầu tĩnh
+              cho việc lắp bơm tăng áp cho thái dương năng</p><p> + Đo tổng khoảng cách
+              từ nguồn nước đến vị trí cuối cùng của nước.</p><p> + Xác định và đo
+              lường mọi bất thường về đất đai (đồi, mương, v.v.) mà hệ thống
+              đường ống phải đi ngang. Nếu bạn và gia đình cần một hệ thống máy
+              bơm hoàn chỉnh, an toàn hãy nhấc máy lên gọi cho Tuấn Đạt để được
+              hỗ trợ nhanh chóng và nhiệt tình nhất.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

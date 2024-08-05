@@ -25,16 +25,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -45,11 +56,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -59,13 +91,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -76,17 +178,20 @@
             <h1>Lắp đặt thiết bị điện dân dụng tại nhà</h1>
 
             <p>
+              <p>
               Đối với tất cả các thiết bị điện dân dụng bạn có thể tin tưởng vào
-              Fisthome để hoàn thành công việc một cách an toàn & chuẩn mực ngay
+              Tuấn Đạt để hoàn thành công việc một cách an toàn & chuẩn mực ngay
               lần đầu tiên! Các thợ điện chuyên nghiệp của chúng tôi có thể xử
               lý mọi công việc lắp đặt điện từ lắp đồng hồ điện đến hệ thống tủ
               điều khiển ánh sáng, điều khiển máy bơm 3 pha, hệ thống máy giặt,
-              điều hòa… Gọi cho Fisthome ngay hôm nay để tìm hiểu thêm về các
+              điều hòa… </p>
+              <p>Gọi cho Tuấn Đạt ngay hôm nay để tìm hiểu thêm về các
               dịch vụ lắp đặt thiết bị điện dân dụng giá rẻ tại nhà!
+              </p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/10/lap-dat-thiet-bi-dien-dan-dung.jpg"
+              src="../img/9277bb71a9fe0ca055ef25.jpg"
             />
           </div>
         </div>
@@ -172,90 +277,102 @@
 
             <h3>Nguyên tắc lắp đặt đường điện trong nhà</h3>
             <p>
+              <p>
               Khi lắp đặt đường điện trong nhà tuyệt đối không được dùng dây dẫn
-              trần mà phải dùng dây dẫn có bọc cách điện chất lượng tốt. Cỡ
+              trần mà phải dùng dây dẫn có bọc cách điện chất lượng tốt. </p>
+              <p>Cỡ
               (tiết diện) dây dẫn điện được chọn sao cho có đủ khả năng tải dòng
               điện đến các dụng cụ điện mà nó cung cấp, không được dùng dây dẫn
               có tiết diện nhỏ vào các dụng cụ điện có công suất quá lớn để
               tránh gây hỏa hoạn cháy nhà, gây hỏng hóc tránh phải sửa điện
-              trong khi đang cần sử dụng. Khi đi dây dẫn trong nhà thường đặt
+              trong khi đang cần sử dụng.</p>
+              <p> Khi đi dây dẫn trong nhà thường đặt
               trên sứ kẹp, puli sứ hoặc luồn trong ống bảo vệ, ống này thường
-              làm bằng nhựa. Khoảng cách giữa 2 sứ kẹp hoặc 2 puli sứ kề nhau
+              làm bằng nhựa.</p>
+              <p> Khoảng cách giữa 2 sứ kẹp hoặc 2 puli sứ kề nhau
               không nên quá lớn, đảm bảo sao cho khoảng cách giữa dây dẫn và vật
               kiến trúc (tường, trần nhà,… ) không nhỏ hơn 10 mm.
+              </p>
             </p>
 
             <h4>Đảm bảo các nguyên tắc</h4>
 
             <p>
+              <p>
               Đảm bảo nguyên tắc khi nối dây dẫn điện phải nối so le và có băng
-              cách điện quấn ở ngoài mối nối (nhất là loại dây đôi). Để đảm bảo
+              cách điện quấn ở ngoài mối nối (nhất là loại dây đôi).</p><p> Để đảm bảo
               an toàn tránh hiện tượng dò điện thì dây dẫn điện xuyên qua tường,
-              mái nhà phải đặt trong ống sứ bảo vệ. Không được để nước mưa đọng
+              mái nhà phải đặt trong ống sứ bảo vệ.</p><p> Không được để nước mưa đọng
               lại trong ống hoặc chảy theo ống vào nhà. Khoảng cách từ các sứ
               cách điện đỡ đầu dây dẫn điện vào nhà đến mái nhà không được nhỏ
-              hơn 2m.
+              hơn 2m.</p>
+
             </p>
 
             <h4>Đóng cầu dao điện khẩn cấp</h4>
 
             <p>
+              <p>
               Trong trường hợp khẩn cấp để thuận lợi nhất cầu dao điện, công tắc
               điện phải đặt ở vị trí thao tác dễ dàng, phía dưới không để vật
               vướng mắc, chỗ đặt phải rộng rãi và đủ sáng, bảo đảm khi cần thiết
-              đóng, cắt điện được nhanh chóng, kịp thời. Cầu dao điện, công tắc
+              đóng, cắt điện được nhanh chóng, kịp thời.</p><p> Cầu dao điện, công tắc
               điện thường được lắp trên bảng gỗ nhỏ, và được bắt chặt vào tường
               hay cột nhà, vị trí hợp lý nhất để gắn bảng gỗ là cách mặt đất
-              khoảng chừng 1,5 m. Cầu dao điện, công tắc điện phải có nắp che an
+              khoảng chừng 1,5 m.</p><p> Cầu dao điện, công tắc điện phải có nắp che an
               toàn. Nắp che có tác dụng đề phòng tai nạn về điện khi ta vô ý va
-              chạm vào và tránh tia hồ quang điện phóng ra khi đóng, cắt điện.
+              chạm vào và tránh tia hồ quang điện phóng ra khi đóng, cắt điện.</p>
+
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/10/lap-dat-quat-tran.jpg"
+              src="../img/706b9d638fec2ab273fd21.jpg"
             />
 
             <h4>Dùng thiết bị chính hãng – an toàn</h4>
 
             <p>
+              <p>
               Tất cả đường dây đều phải có các thiết bị bảo vệ an toàn chống
-              chập, cháy nổ, điện giật,… . Dây chảy của cầu chì bảo vệ phải phù
+              chập, cháy nổ, điện giật,… .</p><p> Dây chảy của cầu chì bảo vệ phải phù
               hợp với công suất sử dụng bảo đảm khi có chạm chập điện thì dây
               chảy phải nổ, cắt mạch điện (nên nhớ rằng dây chảy không phải để
-              bảo vệ người khỏi bị điện giật). Cầu dao điện, công tắc, ổ cắm
+              bảo vệ người khỏi bị điện giật).</p><p> Cầu dao điện, công tắc, ổ cắm
               điện bị hư hỏng phải thay thế ngay, vì nếu không, mọi người rất dễ
-              chạm phải các phần dẫn điện. Dây chảy phải lắp đúng tiêu chuẩn qui
+              chạm phải các phần dẫn điện.</p><p> Dây chảy phải lắp đúng tiêu chuẩn qui
               định thí dụ như trong mạch điện 1 pha (1 dây nóng và 1 dây nguội)
               thì bắt buộc phải đặt cầu chì trên dây nóng. Nếu cả 2 dây điện đều
               là dây nóng (2 dây pha) thì bắt buộc phải đặt cầu chì trên cả 2
-              dây.
+              dây.</p>
             </p>
 
             <h4>Chú ý nước</h4>
 
             <p>
+              <p>
               Chúng tôi khuyến cáo các gia đình ở những nơi ẩm ướt, đặc biệt
               trong phòng tắm, không đặt ổ cắm điện, công tắc điện, không kéo
-              dây điện qua nơi này. Đối với phòng tắm giặt, chỗ đặt công tắc
+              dây điện qua nơi này.</p><p> Đối với phòng tắm giặt, chỗ đặt công tắc
               điện an toàn hơn cả là ở mé ngoài cửa phòng, kề khung cửa phía
-              không có bản lề. Nguyên tắc an toàn về điện là không bao giờ đóng,
+              không có bản lề.</p><p> Nguyên tắc an toàn về điện là không bao giờ đóng,
               cắt cầu dao, công tắc,… khi tay còn ướt vì nước ở bàn tay có thể
               chảy vào những bộ phận có điện trong cầu dao, công tắc và sẽ
-              truyền điện ra làm người bị điện giật.
+              truyền điện ra làm người bị điện giật.</p>
             </p>
 
             <h4>Để xa tầm tay trẻ em</h4>
 
             <p>
+              <p>
               Trẻ em gần các nguồn điện là hết sức nguy hiểm nên cần phải giải
               thích và giáo dục trẻ em hiểu và không được đưa các dây kim loại,
-              đinh sắt hoặc đút ngón tay vào ổ cắm điện. Trong trường hợp điện
+              đinh sắt hoặc đút ngón tay vào ổ cắm điện.</p><p> Trong trường hợp điện
               trong nhà bị hỏng, nếu phần hỏng nằm phía trên điện kế phải báo
               cho công ty sửa điện nước uy tín đến sửa chữa, tuyệt đối không
-              được gọi người ngoài không phải công nhân ngành điện. Nếu phần
+              được gọi người ngoài không phải công nhân ngành điện.</p><p> Nếu phần
               hỏng nằm phía sau điện kế bắt buộc phải cắt cầu dao điện chính rồi
               mới sửa chỗ hỏng. Chỉ được phép sử dụng các thiết bị điện và khí
-              cụ điện đã được nối đất, nối không bảo vệ an toàn.
+              cụ điện đã được nối đất, nối không bảo vệ an toàn.<p>
             </p>
 
             <h4>Nối đất, tiếp âm các thiết bị sử dụng điện</h4>
@@ -268,9 +385,9 @@
               hàng trong việc nối đất cho thiết bị điện.
             </p>
 
-            <img src="https://fisthome.vn/wp-content/uploads/2022/09/sua-chap-dien-khan-cap.jpg">
+            <img src="../img/248f2182330d9653cf1c19.jpg">
             <h1>
-                Liên hệ với Fisthome để được hỗ trợ nhanh nhất có thể
+                Liên hệ với Tuấn Đạt để được hỗ trợ nhanh nhất có thể
             </h1>
           </div>
         </div>
@@ -283,7 +400,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -291,7 +408,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -300,7 +419,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -311,18 +430,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
     <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

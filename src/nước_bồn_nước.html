@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,13 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -74,71 +176,75 @@
             <h1>Vệ sinh bồn nước tại Tp. Hồ Chí Minh</h1>
 
             <p>
+              <p>
               Bồn nước của các hộ gia đình sau một thời gian sử dụng sẽ để lại
-              nhiều cặn bẩn, mảng bám làm ảnh hưởng đến chất lượng nguồn nước.
+              nhiều cặn bẩn, mảng bám làm ảnh hưởng đến chất lượng nguồn nước.</p>
+
               Nếu không được vệ sinh sẽ gián tiếp ảnh hưởng đến sức khỏe cả gia
-              đình. Hãy gọi cho Fisthome qua hotline 090.262.0338 để được tư vấn
+              đình. Hãy gọi cho Tuấn Đạt qua hotline 0837 857 277 để được tư vấn
               và hỗ trợ xử lý sớm nhất.
             </p>
 
             <p>
+              <p>
               Việc vệ sinh bồn nước sau thời gian sử dụng bao lâu phụ thuộc vào
               nhiều yếu tố như dung tích bồn nước, nguồn nước, thời gian, thiết
-              kế, mức độ sử dụng….Chúng tôi khuyên bạn nên vệ sinh định kỳ bồn
+              kế, mức độ sử dụng….</p><p>Chúng tôi khuyên bạn nên vệ sinh định kỳ bồn
               chứa nước 3 tháng 1 lần để đảm bảo nguồn nước được chứa trong bồn
               luôn sạch sẽ bảo đảm an toàn cao nhất cho sức khỏe của Bạn và Gia
-              đình.
+              đình.</p>
             </p>
 
             <h3>Vì sao Bạn cần vệ sinh bồn nước, bể nước thường xuyên?</h3>
 
             <p>
+              <p>
               Thông thường với những nơi dùng nguồn nước xấu như nước nhiễm phèn
               thường bị đục, lắng cặn, và ngay cả đường nước thủy cục nhiều khi
-              cũng bị cặn, đục do đường ống cũ bị bám bẩn lâu năm. Với nguồn
+              cũng bị cặn, đục do đường ống cũ bị bám bẩn lâu năm.</p><p> Với nguồn
               nước giếng thì nên vệ sinh làm sạch khoảng một tháng/lần do để
-              ngoài trời dễ bị nhiễm bụi bẩn, côn trùng,…. Việc vệ sinh bồn nước
+              ngoài trời dễ bị nhiễm bụi bẩn, côn trùng,….</p><p> Việc vệ sinh bồn nước
               rất quan trọng, nếu để cặn bẩn bám (trong phèn có acid) vào các
-              đường hàn bồn inox thường xuyên sẽ gây gỉ sét. Lâu ngày dẫn đến
+              đường hàn bồn inox thường xuyên sẽ gây gỉ sét.</p><p> Lâu ngày dẫn đến
               hiện tượng rò rỉ nước. Vệ sinh bể nước, bồn nước sẽ giữ cho nguồn
-              nước sạch, tránh các bệnh đường ruột nguy hiểm.
+              nước sạch, tránh các bệnh đường ruột nguy hiểm.</p>
             </p>
 
             <h3>
-              Trung tâm sửa chữa điện nước Fisthome còn cung cấp các dịch vụ
+              Trung tâm sửa chữa điện nước Tuấn Đạt còn cung cấp các dịch vụ
               khác như:
             </h3>
 
             <p>
-              Lắp đặt bồn nước/bể nước inox, bồn nhựa, lắp đặt đường ống nước
-              cho bồn nước. Sửa bồn nước/bể nước bị tràn bồn làm thất thoát
-              nước, sửa đường ống nước cho bồn nước. Lắp đặt máy bơm nước đẩy
-              cao cho bồn nước, lắp đặt bơm tăng áp trợ lực cho bồn nước thấp
+              <h4>
+              *Lắp đặt bồn nước/bể nước inox, bồn nhựa,</h4><h4> *lắp đặt đường ống nước
+              cho bồn nước.</h4><h4> *Sửa bồn nước/bể nước bị tràn bồn làm thất thoát
+              nước, sửa đường ống nước cho bồn nước.</h4><h4> *Lắp đặt máy bơm nước đẩy
+              cao cho bồn nước,</h4><h4> *lắp đặt bơm tăng áp trợ lực cho bồn nước thấp
               không đủ áp lực làm nước chảy chậm chảy yếu đến vòi nước, máy
-              giặt, máy tắm nóng. Nhận tháo gỡ, di dời bồn nước, thay bồn nước
-              mới, sửa chữa điện nước cho gia đình, công ty… Lắp đặt bể nước,
+              giặt, máy tắm nóng.</h4><h4> *Nhận tháo gỡ, di dời bồn nước, thay bồn nước
+              mới, sửa chữa điện nước cho gia đình, công ty…</h4><h4> *Lắp đặt bể nước,
               sửa chữa, thay thế phao cơ chống tràn bồn, phao điện tự động điều
-              khiển máy bơm bơm lên bồn chứa. Lắp đặt máy lạnh, điều hòa, sửa
-              chữa máy lạnh, rửa máy lạnh. Cung cấp các loại máy lạnh chính hãng
-              vơi giá tốt, bảo hành dài hạn. Vệ sinh bảo trì, rửa máy giặt, sửa
-              chữa máy giặt. Sửa máy tắm nóng/ sửa bình nóng lạnh, lò vi sóng,
+              khiển máy bơm bơm lên bồn chứa.</h4><h4> *Lắp đặt máy lạnh, điều hòa, sửa
+              chữa máy lạnh, rửa máy lạnh.</h4><h4> *Cung cấp các loại máy lạnh chính hãng
+              vơi giá tốt, bảo hành dài hạn.</h4><h4> *Vệ sinh bảo trì, rửa máy giặt, sửa
+              chữa máy giặt.</h4><h4> *Sửa máy tắm nóng/ sửa bình nóng lạnh, lò vi sóng,
               tủ lạnh, máy giặt với đội ngũ nhân viên kỹ thuật có tay nghề cao.
-              Vệ sinh bồn nước đảm bảo an toàn, nhanh chóng, triệt để.
+              Vệ sinh bồn nước đảm bảo an toàn, nhanh chóng, triệt để.</h4>
             </p>
 
-            <img src="https://fisthome.vn/wp-content/uploads/2022/09/f89814264e8e8ad0d39f441-300x225.jpg">
+            <img src="../img/ve-sinh-bon-nuoc-20-1642413205.jpg">
           </div>
         </div>
       </div>
     </main>
 
     <!-- ----------------------------------------------------------------------- -->
-
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -146,7 +252,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -155,7 +263,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -166,17 +274,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

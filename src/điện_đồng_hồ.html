@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,13 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -74,21 +176,26 @@
             <h1>Dịch vụ lắp đồng hồ kiểm định 1P, 3P</h1>
 
             <p>
-              Fisthome chuyên cung cấp dịch vụ lắp đồng hồ kiểm định 1P, 3P;
+              <p>
+              Tuấn Đạt chuyên cung cấp dịch vụ lắp đồng hồ kiểm định 1P, 3P;
               dịch vụ lắp đồng hồ điện, công tơ điện tại nhà TPHCM. Với đội ngũ
               nhân viên có nhiều năm kinh nghiệm lắp đặt đồng hồ điện cho nhà
-              dân, công ty, phòng trọ, …. chúng tôi lắp công tơ tính điện riêng
+              dân, công ty, phòng trọ, …. </p>
+              <p>
+              Chúng tôi lắp công tơ tính điện riêng
               nhanh chóng và giá rẻ. Tư vấn miễn phí, kiểm tra, báo giá hệ thống
               điện cho khách hàng cần gắn đồng hồ, lắp đồng hồ điện 1 pha, 3
-              pha. Cung cấp và trực tiếp lắt đặt tại nhà các loại đồng hồ kiểm
-              định của các đơn vị điện lực nhà nước phân phối. Khi quý khách cần
-              lắp đồng hồ kiểm định 1P, 3P hãy gọi ngay cho Fisthome để được hỗ
+              pha.<p> Cung cấp và trực tiếp lắt đặt tại nhà các loại đồng hồ kiểm
+              định của các đơn vị điện lực nhà nước phân phối. </p>
+              <p>Khi quý khách cần
+              lắp đồng hồ kiểm định 1P, 3P hãy gọi ngay cho Tuấn Đạt để được hỗ
               trợ kiểm tra xem hệ thống điện có tách được hay không và đưa ra
               các phải pháp tối ưu nhất hoàn toàn miễn phí.
+              </p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/10/lap-dat-dong-ho-kiem-dinh.jpg"
+              src="../img/san-pham.jpg"
             />
           </div>
         </div>
@@ -98,23 +205,32 @@
             <h1>Đồng hồ điện được sử dụng như thế nào?</h1>
 
             <p>
+              <p>
               Công tơ điện là thiết bị giúp đo lường lượng điện năng tiêu thụ
               trong gia đình của bạn, từ các vật dụng như điều hòa, tủ lạnh, máy
-              giặt bếp điện… Khi bạn sử dụng nguồn điện thì các số chữ tự động
+              giặt bếp điện… </p>
+              <p>
+              Khi bạn sử dụng nguồn điện thì các số chữ tự động
               nhảy trên thiết bị, các công ty điện lực, chủ nhà trọ sẻ tính tiền
-              dựa vào đây. Mỗi tháng bạn thường hay nhận hóa đơn tiền điện với
+              dựa vào đây. </p>
+              <p>
+                Mỗi tháng bạn thường hay nhận hóa đơn tiền điện với
               các số liệu như chữ số điện, đơn vị tính, số tiền,… Mỗi hộ gia
               đình đều được cục điện lực cấp một đồng hồ điện để tính tổng lượng
-              điện tiêu thụ gia đình. Nhưng nếu cần biết lượng điện tiêu thụ của
+              điện tiêu thụ gia đình.</p>
+              <p> Nhưng nếu cần biết lượng điện tiêu thụ của
               một số thiết bị như máy lạnh, tủ lạnh hoặc từng phòng thì bạn cần
               dịch vụ lắp đồng hồ điện nhưng bạn có thể an tâm vì đồng hồ có dấu
-              kiểm định nên chỉ số hoàn toàn chính xác. Đồng hồ công tơ điện
+              kiểm định nên chỉ số hoàn toàn chính xác.</p>
+              <p> Đồng hồ công tơ điện
               hiện nay có nhiều loại, duy về cấu tạo mạch điện, đồng hồ công tơ
-              điện chia ra 2 loại là: đồng hồ 1 pha và 3 pha. Tùy thuộc vào nhu
+              điện chia ra 2 loại là: đồng hồ 1 pha và 3 pha. </p>
+              <p>Tùy thuộc vào nhu
               cầu sử dụng mà khách hàng lựa chọn đồng hồ điện phù hợp với đường
               dây dẫn điện của gia đình, thường thì đồng hồ điện 1 pha là dùng
               cho hộ gia đình, đồng hồ điện 3 pha dùng cho doanh nghiệp, dịch
-              vụ, điện công nghiệp.
+              vụ, điện công nghiệp.</p>
+
             </p>
 
             <h1>Dịch vụ lắp đồng hồ kiểm định 1 pha và 3 pha khắp HCM</h1>
@@ -128,27 +244,32 @@
             </p>
 
             <h1>
-              Khi nào quý khách cần đến dịch vụ lắp đồng hồ điện của Fisthome?
+              Khi nào quý khách cần đến dịch vụ lắp đồng hồ điện của Tuấn Đạt?
             </h1>
 
             <p>
+              <p>
               • Khi quý khách đang cung cấp dịch vụ cho thuê nhà trọ và cần phải
               gắn đồng hồ điện riêng cho từng phòng nhằm tránh tình trạng hơn
-              thua trong quá trình sử dụng (phòng dùng nhiều phòng dùng ít,..) •
+              thua trong quá trình sử dụng (phòng dùng nhiều phòng dùng ít,..) </p>
+              <p>•
               Khi quý gặp phải các tình trạng như: đồng hồ không chạy, đồng hồ
               chạy quá nhanh trong khi không sử dụng nhiều thiết bị và cần thợ
-              đến kiểm tra sửa chữa, thay đồng hồ điện. • Sau quá trình lựa chọn
+              đến kiểm tra sửa chữa, thay đồng hồ điện.</p>
+              <p> • Sau quá trình lựa chọn
               được đồng hồ thì chắc chắn rằng quý khách sẽ cần đến một đội ngũ
               thợ lắp đồng hồ điện chuyên nghiệp để lắp chính xác nguồn điện cho
-              đúng từng phòng. ⇒ Và chúng tôi là đơn vị lắp đồng hồ kiểm định
+              đúng từng phòng. </p>
+              <p>⇒ Và chúng tôi là đơn vị lắp đồng hồ kiểm định
               1P, 3P chuyên nghiệp, nhanh chóng. Fisthome luôn là lựa chọn lý
               tưởng dành cho mọi khách hàng. Chúng tôi với đội ngũ nhân viên,
               đội thợ giỏi, nhiều kinh nghiệm lẫn kiến thức sẽ kiểm tra, tư vấn,
               báo giá trước cho quý khách hoàn toàn miễn phí .
+              <p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/10/fisthome-lap-dong-ho-kiem-dinh.jpg"
+              src="../img/bao-tri-cau-dao.jpg"
             />
           </div>
 
@@ -159,36 +280,48 @@
               </h1>
 
               <p>
+                <p>
                 Nhận kiểm tra hệ thống điện, tách hệ thống điện cho quý khách có
-                nhu cầu cho thuê phòng trọ . Kiểm tra hệ thống điện cho phòng
-                trọ đã lắp đồng hồ điện 1P, 3P nhưng chạy không chính xác . Lắp
+                nhu cầu cho thuê phòng trọ .</p>
+                <p> Kiểm tra hệ thống điện cho phòng
+                trọ đã lắp đồng hồ điện 1P, 3P nhưng chạy không chính xác . </p>
+                <p>Lắp
                 đồng hồ điện 1 pha, 3 pha nhanh chóng cho nhà ở, nhà trọ, hộ
-                kinh doanh cho thuê nhà, thuê mặt bằng, nhà xưởng,… Thay thế các
+                kinh doanh cho thuê nhà, thuê mặt bằng, nhà xưởng,… </p>
+                <p>Thay thế các
                 đồng hỗ điện cũ hỏng, chạy không chính xác hay lúc chạy lúc
                 dừng. Cung cấp các loại đồng hồ 1 pha, 3 pha giá tốt, chạy chính
                 xác.
+                </p>
               </p>
 
               <h1>Khi nào cần lắp đặt công tơ điện riêng trong nhà?</h1>
 
               <p>
+                <p>
                 Khi dãy nhà trọ của bạn cần được gắn đồng hồ điện riêng cho mỗi
-                phòng nhằm tránh tình trạng hơn thua trong quá trình sử dụng.
+                phòng nhằm tránh tình trạng hơn thua trong quá trình sử dụng.</p>
+                <p>
                 Khi bạn cần chiếc đồng hồ chính hãng, hợp lý phù hợp với nguồn
                 điện để lắp trước khi cho thuê nhằm đảm bảo tính minh bạch cho
-                người thuê với chủ nhà trọ. Sau quá trình lựa chọn được đồng hồ
+                người thuê với chủ nhà trọ. </p>
+                <p>Sau quá trình lựa chọn được đồng hồ
                 thì chắc chắn rằng quý khách sẽ cần đến một người thợ lắp đồng
                 hồ chuyên nghiệp để lắp chính xác nguồn điện cho đúng với từng
-                phòng. Bạn cần biết chiếc đồng hồ điện bạn tự mua có phải là
+                phòng.</p>
+                <p> Bạn cần biết chiếc đồng hồ điện bạn tự mua có phải là
                 thật hay giả và muốn được nhận diện bởi chuyên viên tư vấn lắp
                 đặt đồng hồ kiểm định chuyên nghiệp. Khi đồng hồ điện nhà bạn
                 bỗng dưng chạy sai, hay tăng vọt số ký điện bất thường và bạn
-                cần thợ gắn đồng hồ điện chuyên nghiệp của Fisthome đến kiểm tra
+                cần thợ gắn đồng hồ điện chuyên nghiệp của Tuấn Đạt đến kiểm tra
                 và xem xét sửa chữa. Hay khi đồng hồ điện nhà bạn đang chạy bỗng
-                dưng bị ngưng hoạt động. lap-dat-dong-ho-dien
+                dưng bị ngưng hoạt động.
+
+                </p>
+
               </p>
 
-              <img src="https://fisthome.vn/wp-content/uploads/2022/10/lap-dat-dong-ho-dien.jpg">
+              <img src="../img/bao-gia-cong-to-dien-1-pha-va-3-pha-4.avif">
             </div>
           </div>
         </div>
@@ -196,12 +329,11 @@
     </main>
 
     <!-- ----------------------------------------------------------------------- -->
-
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -209,7 +341,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -218,7 +352,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -229,17 +363,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <h1>Hút hầm cầu, bể phốt uy tín giá rẻ tại Hồ Chí Minh</h1>
+        
+                  <p>
+                    Trong quá trình sử dụng lâu dài nguyên nhân gây nên việc tắc nghẽn
+                    hầm cầu, bể phốt là điều không thể tránh khỏi. Vậy lên nếu chúng ta
+                    nắm được những nguyên nhân sẽ giúp bạn chủ đông hơn trong việc hầm
+                    cầu bị tắc. Hãy liên hệ ngay với thợ sửa chữa điện nước Fisthome để
+                    được sửa chữa, hút hầm cầu, bể phốt giá rẻ tại Hồ Chí Minh
+                  </p>
+        
+                  <img
+                    src="../img/thông nghẹt 1.jpg"
+                    alt="hình"
+                  />
+        
+                  <h1>Nguyên nhân dẫn đến tắc nghẽn hầm cầu, bể phốt</h1>
+        
+                  <p>
+                    Hầm cầu, bể phốt sử dụng trong một thời gian dài và không được kiểm
+                    tra hay hút định kỳ…<p> Lắp đặt đường ống và bồn cầu sai nguyên tắc
+                    ngay từ ban đầu Khi xây dựng và thi công hầm cầu không có đường ống
+                    thoát khí Tắc từ đường ống thoát nước thải nối với hầm cầu Trong quá
+                    trình sự dụng vô tình làm rơi vật cứng, rắn vào trong bồn cầu Thói
+                    quen dùng quá nhiều giấy vệ sinh làm tắc bồn cầu Hệ thống nước xả
+                    kém, lực nước yếu</p>
+                  </p>
+        
+                  <h1>Dấu hiệu cần thực hiện hút hầm cầu ngay</h1>
+        
+                  <p>
+                    Nếu gặp phải một trong những dấu hiệu sau đây thì bạn và gia đình
+                    cần thực hiện thông rút hầm cầu ngay:<p> Bồn cầu không thể xả nước
+                    được, bị ứ đọng, càng xe nước thì càng trào ngược lại.</p><p> Nước thải xả
+                    chậm, ứ đọng lại trên bồn cầu, rất lâu mới hết.</p><p> Xuất hiện mùi hôi
+                    bất thường trong nhà tắm, nhà vệ sinh Sàn nhà tắm bị tràn nước ngược
+                    trở lại, sàn hay bị ẩm Nắp hầm cầu có nhiều chất thải, tóc, rác…</p> bịt
+                    kín Đường ống dẫn nước, ống xả thải có những âm thanh lạ và xả lâu .
+                  </p>
+        
+                  <h3>Tại sao phải thường xuyên thông hút hầm cầu?</h3>
+        
+                  <p>
+                    <p>
+                    Trong quá trình sử dụng, việc hầm cầu của gia đình bị tắc, bị đầy là
+                    điều không thể tránh khỏi, gây ra nhiều hệ quả và sự phiền phức
+                    không đáng có.</p><p> Mặc dù quan trọng nhưng bể phốt lại thường đặt dưới
+                    móng nhà hoặc những nơi khó nhìn thấy gây ra rắc rối trong quá trình
+                    giải quyết.</p> Vì vậy, bạn cần biết những dấu hiệu sau đây để biết và
+                    xử lý thật kịp thời. Một số dấu hiệu cho thấy hầm cầu nhà bạn đang
+                    “đình công” là:
+                  </p>
+        
+                  <img
+                    src="../img/thông nghẹt2.jpg"
+                    alt="hình"
+                  />
+        
+                  <p>
+                    Đường ống thoát nước ở bồn cầu không thể chảy,
+                    bị nghẹt dẫn đến nước bẩn dồn ứ Nước bị chảy ngược lại gây mất vệ
+                    sinh trong quá trình sử dụng<p> Nước vẫn chảy nhưng chảy rất chậm Khi
+                    xả nước thì trong bồn cầu xuất hiện những âm thanh lạ Nhà vệ sinh có
+                    mùi hôi và lan ra không gian nhà Rong rêu xung quanh đường ống thải
+                    bỗng xanh tốt lạ thường.</p><p> Nếu như gặp phải các vấn đề này thì tức là
+                    đã đến lúc bạn phải thông tắc bồn cầu, càng để lâu càng vất vả trong
+                    quá trình giải quyết và còn tốn kém nhiều hơn.</p><p> Sau đây là một số tác
+                    hại nếu bạn không hút bồn cầu định kỳ:</p> Hầm cầu bốc mùi hôi thối và
+                    khó chịu Sản sinh nhiều vi khuẩn gây hại cho sức khỏe người sử dụng,
+                    cụ thể là gia đình bạn Ảnh hưởng đến sinh hoạt chung
+                  </p>
+        
+                  <h3>Vậy khi nào hút hầm cầu là hợp lý?</h3>
+        
+                  <p>
+                    <p>
+                    Hệ thống vệ sinh là một phần thiết yếu mang công dụng đặc biệt trong
+                    công trình nhà ở. Nó đảm bảo cho mọi hoạt động thường ngày của con
+                    người diễn ra bình thường, vì vậy nó rất quan trọng.</p><p> Thông thường
+                    trong quá trình xây nhà, người ta sẽ tính toán thời gian hợp lý để
+                    hút hố ga định kỳ, tùy vào diện tích nhà và số người sử dụng sẽ có
+                    khoảng thời gian khác nhau.</p><p> Ví dụ như: Nếu gia đình bạn có khoảng 4
+                    đến 5 người, sử dụng 4 đến 5 năm cần thông hút 1 lần.</p><p> Các khu nhà
+                    trọ và khu tập thể thì khoảng 1 đến 2 năm 1 lần, riêng khách sạn và
+                    trung tâm thương mại thì 2 đến 3 năm mới phải rút hầm cầu 1 lần.</p> Tuy
+                    nhiên trên thực tế, cũng không thể tránh khỏi những phát sinh như
+                    chất thải rắn đi vào trong quá trình sử dụng, vì vậy bạn nên cân
+                    nhắc thông hút trước thời gian dự kiến sẽ chủ động hơn.
+                  </p>
+        
+                  <h3>Khi hầm cầu bị tắc, tự xử lý có phải cách tốt không?</h3>
+        
+                  <p>
+                    Thực ra, nếu như bồn cầu gia đình bạn bị tắc nhẹ thì các cách giải
+                    quyết trên đều có thể sử dụng được.<p> Tuy nhiên nếu đã đến hạn hút bồn
+                    cầu định kỳ thì chúng tôi khuyên bạn không nên tự giải quyết. Vì sao
+                    ư?</p><p> Lý do là vì việc thông hút đòi hỏi bạn cần có kỹ năng chuyên môn
+                    cao, ngoài ra phải có các thiết bị chuyên dụng để xử lý triệt để.</p> Vì
+                    vậy, để không xảy ra vấn đề tắc nghẽn nghiêm trọng, tốt nhất ngay từ
+                    khi sử dụng bạn nên quan tâm nhiều hơn đến thói quen của gia đình,
+                    ví dụ như những loại rác không thể phân hủy thì đừng đổ vào bồn cầu.
+                  </p>
+        
+                  <h1>Đơn vị uy tín giá rẻ hút hầm cầu, bể phốt</h1>
+        
+                  <p>
+                    Tuấn Đạt có đội ngũ nhân viên lành nghề, trung thực, nhiệt tình, có
+                    nhiều năm kinh nghiệm hút hầm cầu, bể phốt.<p> Phục vụ
+                    nhanh chóng, nhân viên có mặt chỉ sau 15 phút tiếp nhận yêu cầu từ
+                    khách hàng.</p><p> Hệ thống xe hút hầm cầu đa dạng, giá cả phù hợp với tất
+                    cả mọi dung tích hầm cầu từ gia đình nhỏ đến chung cư, công ty,
+                    doanh nghiệp, khu công nghiệp,…</p><p> Cam kết rút hầm cầu, bể phốt một
+                    cách triệt để, xử lý nhanh chóng tình trạng hầm cầu, bồn cầu bị tắc
+                    nghẽn.</p><p> Quá trình rút hầm cầu nhanh chóng, chất lượng. Đảm bảo gọn
+                    gàng, vệ sinh, không làm ảnh hưởng đến sinh hoạt trong gia đình.</p><p>
+                    Chuyên về giải pháp hút hầm cầu không đục phá, không làm hư hỏng kết
+                    cấu của công trình.</p><p> Chất thải sau khi rút hầm cầu được công ty môi
+                    trường xử lý theo đúng quy trình, tuyệt đối không đổ trộm ra ngoài
+                    môi trường như một số đơn vị khác, gây ô nhiễm môi trường.</p> Chúng tôi
+                    có bảng giá hút hầm cầu ở HCM hợp lý, tiết kiệm tối đa chi phí cho
+                    khách hàng.
+                  </p>
+        
+                  <h1>Giá rút hầm cầu bằng các thiết bị chuyên dụng</h1>
+        
+                  <p>
+                    <p>
+                    Có thể các bạn còn đang lăn tăn về vấn đề giá cả, không biết có nên
+                    thuê đội ngũ về hút hố ga không?</p><p> Tại đây chúng tôi sẽ nêu bảng giá
+                    hút hầm cầu bằng nhiều thiết bị cập nhật mới nhất cho năm 2023 nhé:</p><p>
+                    Thông cống nghẹt có giá từ 150.000 đến 280.000 VNĐ</p><p> Khắc phục bồn cầu
+                    bị tắc nghẽn, nghẹt có giá từ 250.000 đến 450.000 VNĐ</p><p> Nghẹt cống nhà
+                    tắm đơn giản từ 100.000 đến 300.000 VNĐ</p><p> Thông tắc bằng máy nén khí
+                    thì dao động từ 150.000 đến 400.000 VNĐ</p><p> Thông tắc bằng máy rung lò
+                    xo dây nhỏ khoảng 60.000 đến 160.000 VNĐ,</p> dây vừa có giá từ 100.000
+                    đến 260.000 VNĐ và loại dây to giá sẽ vào khoảng 150.000 đến 450.000
+                    VNĐ.
+                  </p>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

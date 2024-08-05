@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Lắp đặt ống đồng, bảo ôn, thoát nước ngưng</h1>
+
+            <hr />
+
+            <h1>Lắp đặt ống đồng cho máy lạnh</h1>
+
+            <p>
+              <p>Tuấn Đạt sửa chữa điện nước uy tín, chuyên lắp đặt ống đồng, bảo ôn, thoát nước ngưng giá rẻ và đạt tiêu chuẩn.</p>
+              <p>Mỗi hãng sản xuất máy lạnh sẽ có một quy định cụ thể về kích thước ống đồng riêng.</p>
+              <p>Khi lắp đặt ống đồng cho máy lạnh cần để bảo đảm máy vận hành ổn định và tiết kiệm điện, độ bền cao.</p>
+              
+            </p>
+
+            <img
+              src="../img/ống đồng 1.jpg"
+              alt="hình"
+            />
+
+            <p>
+              <p>Nếu lắp đặt sai hoặc đi ống đồng máy lạnh quá dài hoặc quá ngắn so với quy định của hãng thì người dùng còn có thể bị hãng từ chối bảo hành khi gặp sự cố.</p>
+              <p>Dưới đây là những tiêu chuẩn về ống đồng mà chúng ta cần biết khi lắp đặt máy lạnh, điều hòa:</p>
+              
+            </p>
+
+            <h3>1. Kích thước ống đồng khi lắp máy lạnh</h3>
+
+            <p>
+              <p>Ống đồng cho máy lạnh, điều hòa hiện nay chủ yếu sử dụng 2 loại, ống từ dàn nóng vào dàn lạnh (ống vào) và ống từ dàn lạnh ra dàn nóng (ống ra).</p>
+              <p>Kích thước đường kính ống vào sẽ bé hơn ống ra, chi tiết như sau:</p>
+              <p>– Đối với máy 1 HP (~ 9000 BTU): ống vào có đường kính ngoài là 6mm và ống ra là 10mm.</p>
+              <p>– Đối với máy 1.5 HP (~ 12000 BTU): ống vào có đường kính ngoài là 6mm và ống ra là 10mm hoặc 12mm.</p>
+              <p>– Đối với máy 2 HP (~ 18000 BTU): ống vào có đường kính ngoài là 6mm và ống ra là 12mm.</p>
+              <p>– Đối với máy 2.5 HP (~ 24000 BTU): ống vào có đường kính ngoài là 6mm và ống ra là 16mm.</p>
+              
+            </p>
+
+            <h1>Bảo ôn dạng ống – Bảo ôn ống nước ngưng</h1>
+
+            <p>
+              <p>Hệ thống ống nước ngưng điều hòa là chi tiết vô cùng quan trọng nhưng tuy nhiên lại không được nhiều người chú ý kỹ lưỡng.</p>
+              <p>Chính vì vậy nếu bị hỏng sẽ gây ra rất nhiều bất tiện trong cuộc sống sinh hoạt hằng ngày.</p>
+              <p>Để khắc phục tình trạng nước chảy ra từ điều hòa thì lắp hệ thống ống nước ngưng là giải pháp tối ưu nhất.</p>
+              <p>Công ty Tuấn Đạt chuyên lắp đặt điều hòa theo chuẩn quy trình và cũng bao gồm cả lắp đặt hệ thống ống nước ngưng điều hòa.</p>
+              
+            </p>
+
+            <img
+              src="../img/ống đồng 3.jpg"
+              alt="hình"
+            />
+
+            <h1>Hướng dẫn cách lắp đặt hệ thống ống nước ngưng điều hòa</h1>
+
+            <h3>Lắp ống xả nước dàn lạnh</h3>
+
+            <p>
+              <p>Bước 1: Nối vòi xả nước đi kèm (loại dẻo) vào chỗ xả nước của dàn lạnh.</p>
+              <p>Phải sử dụng vòi xả nước đi kèm với máy.</p>
+              <p>Loại vòi dẻo sẽ ngăn ngừa ứng suất quá mức từ bể xả.</p>
+              <p>Không uốn ngang vòi xả để ngăn lực tác động quá mức lên vòi.</p>
+              <p>Uốn vòi xả có thể gây rò rỉ nước.</p>
+              <p>Bước 2: Xiết chặt kết nối vòi xả nước với chỗ xả của máy bằng đai vòi xả.</p>
+              <p>Không dùng keo để gắn vòi xả nước (phụ kiện) vào chỗ xả của máy.</p>
+              <p>Dùng keo sẽ gây khó tháo vòi xả khỏi máy lúc bảo trì máy hoặc tương tự.</p>
+              <p>Bước 3: Lắp ống xả nhánh vào ống xả chính.</p>
+              
+            </p>
+
+            <img src="../img/ống đồng 2.jpg" alt="hình">
+
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

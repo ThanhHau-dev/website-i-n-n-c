@@ -11,9 +11,9 @@
 body {
     font-family: Open Sans, sans-serif;
 }
-/* header */
-/* ------------------------------------------------------------- */
 
+
+/* header */
 
 .header_1{
     border-radius: 0 0 25px 25px;
@@ -26,46 +26,15 @@ body {
     text-transform: uppercase;
 }
 
-/* class này phục vụ cho hiệu ứng co dãn menu của js */
-.header_1.expanded {
-    height: 200px; /* Kích thước khi thu lại */
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.header_1.expanded a {
-    font-size: 22px;
-}
-
-.header_1.expanded a:hover{
-    font-size: 30px;
-}
-
-
-.header_1.expanded #logo {
-    font-size: 50px;
-}
-
-.header_1.expanded #phoneNumber {
-    font-size: 40px;
-}
-
-
-.header_1.expanded i {
-    font-size: 50px;
-}
-
-
-
-/* kết thúc thay đổi js */
-
-
-
 #logo {
     font-size: 70px;
     font-weight: bold;
     /* text-decoration: underline; */
     color: var(--colorCenter);
+}
+
+#img_logo{
+    width: 70%;
 }
 
 
@@ -82,7 +51,7 @@ body {
 
 .header_1_btn_phone {
     background-color: var(--colorCenter);
-    width: 50%;
+    width: 70%;
     font-weight: bold;
     color: white;
     border-radius: 30px;
@@ -112,50 +81,48 @@ body {
     font-size: 85px;
 }
 
-.header_2{
+.header_2 {
     padding-top: 300px;
+    background-color: var(--colorCenter);
+    color: white;
+    height: 700px;
 }
 
-.header_2{
-    padding-top: 300px;
+.header_2 h2{
+    margin-top: 20px;
 }
 
 
-.header_2 img {
+
+/* .header_2 img {
     width: 100%;
-    height: 10%;
+    height: 80%;
     background-size: cover;
     background-position: center;
-    /* tạo lớp phủ mờ dần cho ảnh */
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 1));
     object-fit: cover;
+    margin-top: 200px;
+} */
 
+.header_2_1 img{
+    display: flex;
+    width: 100%;
+    margin-top: 120px;
+    border-top-left-radius: 100px; /* Bo tròn góc trên bên trái */
+    border-bottom-right-radius: 100px; /* Bo tròn góc dưới bên phải */
 }
 
-/* ------------------------------------------------------------------------------- */
-
-/* footer */
-
-.footer {
-    background-color: #703f3f;
-    color: white;
-    padding: 50px;
+.header_mobile {
+    display: none;
 }
 
-.footer h1 {
-    font-weight: bolder;
-}
-
-.footer li {
-    font-size: 20px;
-}
 
 /* ------------------------------------------------------------------------------------ */
 
 /* main */
 
 .main {
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .main h1{
@@ -179,6 +146,277 @@ body {
 .row {
     margin-top: 40px;
 }
+
+/* -------------------------------------------------------------------------- */
+/* footer */
+
+.footer {
+    background-color: #703f3f;
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 2px;
+}
+
+.footer img {
+    width: 70%;
+}
+
+.footer h1 {
+    font-weight: bolder;
+}
+
+.footer li {
+    font-size: 20px;
+}
+
+.footer h4 {
+    margin-top: 20px;
+}
+
+#design {
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* reponse */
+
+
+/* Reponsi cho pc màn hình nhỏ */
+@media (min-width: 950px) and (max-width: 1500px) {
+
+    .header_1_btn_phone {
+        width: 100%;
+    }
+
+    .header_2_1 img {
+        margin-top: 200px;
+    }
+    
+    .main_2_btn{
+        width: 40%;
+    }
+
+    .main_4 form {
+        width: 100%;
+        height: 250px;
+    }
+
+    .main_4 form p{
+        font-size: 15px;
+    }
+
+    .main_5_circle{
+        height: 220px;
+    }
+
+    .main_5_circle:hover{
+        font-size: 20px;
+    }
+
+    #ly_do{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .main_6 form h1{
+        font-size: 30px;
+    }
+   
+}
+
+
+/* reponse cho table từ 700 - 949 */
+@media (min-width: 701px) and (max-width: 949px) {
+
+.header_1_btn_phone {
+    width: 100%;
+    font-size: 20px;
+}
+
+.header_1_menu i {
+    font-size: 40px;
+}
+
+.header_2 h2 {
+    font-size: 25px;
+}
+
+.header_2_1 img {
+    margin-top: 250px
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.header_1_menu h3 {
+    font-size: 20px;
+}
+
+
+
+.main_2_btn {
+    width: 50%;
+}
+
+.main_3_btn {
+    width: 100%;
+}
+
+
+.main_4 form p{
+    display: none;
+}
+
+.main_5_circle{
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.main_6 form p {
+    display: none;
+}
+
+.main_7 img {
+    width: 70%;
+}
+
+.animated-image {
+    width: 100%; /* Đảm bảo hình ảnh phù hợp với kích thước cột */
+    animation: moveRight 1s infinite alternate; /* Áp dụng hoạt ảnh */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Bắt đầu ở vị trí ban đầu */
+    }
+    100% {
+        transform: translateX(20px); /* Di chuyển sang phải 20px */
+    }
+}
+}
+
+
+
+/* Reponsi cho mobile */
+@media (max-width: 700px) {
+.header {
+    display: none;
+}
+
+.header_mobile{
+    display: block;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 100px;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    
+}
+
+
+
+.main{
+    margin-top: 0%;
+}
+
+.header_mobile img{
+    width: 55%;
+}
+
+.header_mobile i {
+    font-size: 50px;
+    margin-left: auto;
+    margin-top: 0%;
+    color: var(--colorCenter);
+}
+
+.main_1 br {
+    display: none;
+}
+
+.main_1 img {
+    margin-top: 10px;
+}
+
+.card img{
+    padding: 20px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.main_2_btn {
+    width: 60%;
+}
+
+.main_3_btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main_4{
+    margin-top: 150px;
+}
+
+.main_4 form {
+    width: 90%;
+    height: 200px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.main_5_circle{
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.main_5_circle:hover{
+    font-size: 15px;
+}
+
+#ly_do {
+    font-size: 25px;
+}
+
+.main_6 form {
+    margin-top: 50px;
+}
+
+/* chuyển động hình ảnh cho main 7 */
+
+.main_7 img {
+    width: 50%;
+}
+
+.animated-image {
+    width: 100%; /* Đảm bảo hình ảnh phù hợp với kích thước cột */
+    animation: moveRight 1s infinite alternate; /* Áp dụng hoạt ảnh */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Bắt đầu ở vị trí ban đầu */
+    }
+    100% {
+        transform: translateX(100px); /* Di chuyển sang phải 20px */
+    }
+}
+}
+
 
 
 

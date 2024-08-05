@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,13 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
     <main class="main">
@@ -72,36 +174,38 @@
           <div class="col-md-12">
             <h1>Sửa máy bơm nước bị chập cháy</h1>
             <p>
-              Sửa máy bơm nước Fisthome – Máy bơm nước là một trong những thiết
+              <p>
+              Sửa máy bơm nước Tuấn Đạt – Máy bơm nước là một trong những thiết
               bị được sử dụng nhiều nhất trong cấp thoát nước sinh hoạt tại Việt
-              Nam. Tuy nhiên, thiết bị này cũng gây khá nhiều phiền toái cho
+              Nam.</p><p> Tuy nhiên, thiết bị này cũng gây khá nhiều phiền toái cho
               người sử dụng với các lỗi như bị rò, không lên nước, quạt máy
-              không chạy, gây tiếng ồn, thậm chí cháy nổ… Cháy máy bơm là một
-              trong những lỗi xảy ra khá phổ biến và nghiêm trọng. Bài viết hôm
-              nay Fisthome sẽ chỉ ra nguyên nhân máy bơm nước bị cháy và cách
+              không chạy, gây tiếng ồn, thậm chí cháy nổ…</p><p> Cháy máy bơm là một
+              trong những lỗi xảy ra khá phổ biến và nghiêm trọng.</p> Bài viết hôm
+              nay Tuấn Đạt sẽ chỉ ra nguyên nhân máy bơm nước bị cháy và cách
               khắc phục, sửa máy bơm nước khi gặp phải tình trạng này.
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/sua-may-bom-nuoc.jpg"
+              src="../img/bơm 10.webp"
             />
 
-            <h1>Liên hệ Fisthome sớm nhất để được hỗ trợ nhanh nhất</h1>
+            <h1>Liên hệ Tuấn Đạt sớm nhất để được hỗ trợ nhanh nhất</h1>
 
             <p>
               Trên đây là những chia sẻ về máy bơm nước bị cháy và lưu ý khi sử
               dụng, cùng với những lỗi thường gặp khi sử dụng loại máy móc này.
               Hy vọng có thể giúp bạn phần nào trong việc tìm hiểu thông tin và
               sử dụng. Nếu bạn vẫn không thể giải quyết được thì hãy liên hệ
-              ngay với Fisthome nhé:
+              ngay với Tuấn Đạt nhé:
             </p>
 
             <h1>Những dấu hiệu máy bơm nước bị cháy mà bạn nên cẩn thận</h1>
 
             <p>
+              <p>
               Khi cắm điện lúc lâu nhưng không thấy máy bơm hoạt động Cắm điện
               thấy máy bơm hoạt động, sáng đèn nhưng không thấy có nước lên Máy
-              bơm hoạt động kêu to, các cánh quạt không quay hoặc quay rất chậm
+              bơm hoạt động kêu to, các cánh quạt không quay hoặc quay rất chậm</p>
               Trong quá trình máy chạy có phát ra tiếng kêu ù ù Hoặc máy bơm có
               hoạt động nhưng có mùi khét từ động cơ, khói đen bốc ra. Khi phát
               hiện thấy một trong những dấu hiệu trên thì có thể máy bơm của bạn
@@ -111,55 +215,60 @@
             <h1>Nguyên nhân khiến máy bơm bị cháy, chập là gì?</h1>
 
             <p>
+              <p>
               Đây là những nguyên nhân phổ biến dẫn đến sự hỏng hóc, chập cháy
               của máy bơm, nặng hơn có thể ảnh hưởng đến cả nguồn điện của gia
-              đình. Đầu tiên, máy bơm có thể bị chập điện do vị trí đặt máy quá
-              ẩm thấp, thường xuyên bị ngấm nước. Trong quá trình lắp đặt và sử
+              đình.</p>
+              <p> Đầu tiên, máy bơm có thể bị chập điện do vị trí đặt máy quá
+              ẩm thấp, thường xuyên bị ngấm nước.</p><p> Trong quá trình lắp đặt và sử
               dụng máy bơm hộ gia đình không chú ý tới những thông số về điện
-              áp, dẫn đến điện áp đưa vào máy bơm sai chỉ dẫn của nhà sản xuất.
+              áp, dẫn đến điện áp đưa vào máy bơm sai chỉ dẫn của nhà sản xuất.</p><p>
               Mất nước nhưng vẫn bật máy bơm, buồng máy hoạt động nhưng không có
               nước, tình trạng này diễn ra ở mùa hè quá lâu dẫn đến nóng, cháy
               phớt. Khi phớt hỏng sẽ làm nước chảy vào mô tơ điện và làm cháy
-              máy bơm. Rơ le nhiệt của máy bơm bị hỏng nên cảm biến không thể tự
+              máy bơm.</p> Rơ le nhiệt của máy bơm bị hỏng nên cảm biến không thể tự
               ngắt điện, máy bơm bị nóng quá lâu dẫn đến bị cháy. Thiết bị bơm
               nước này bị ngập trong nước làm cho các hệ thống điện trong máy bị
               hỏng, chập điện.
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/sua-chap-dien-khan-cap.jpg"
+              src="../img/bơm 4.jpg"
             />
 
             <h1>Dịch vụ sửa máy bơm nước bị cháy, chập</h1>
 
             <p>
-              Fisthome là đơn vị sửa điện nước uy tín, chúng tôi luôn có đội thợ
-              kinh nghiệm cao trong lĩnh vực sửa điện nước. Đặc biệt, với hiện
+              <p>
+              Tuấn Đạt là đơn vị sửa điện nước uy tín, chúng tôi luôn có đội thợ
+              kinh nghiệm cao trong lĩnh vực sửa điện nước.</p><p> Đặc biệt, với hiện
               tượng máy bơm bị chập cháy chúng tôi luôn đảm bảo tuân thủ các quy
-              trình sửa chữa: Ngắt ngay lập tức nguồn điện kết nối với máy bơm,
+              trình sửa chữa:</p><p> Ngắt ngay lập tức nguồn điện kết nối với máy bơm,
               đảm bảo không làm ảnh hưởng đến nguồn điện và các thiết bị khác
               trong nhà. Kiểm tra nguồn điện áp phù hợp với máy bơm hoặc ngược
               lại là sử dụng máy bơm phù hợp với điện áp của gia đình. Kiểm tra
-              nước có cạn ko? Tránh tình trạng máy bơm bị hoạt động lâu mà không
+              nước có cạn ko?</p><p> Tránh tình trạng máy bơm bị hoạt động lâu mà không
               có nước, gây cháy. Kiểm tra phớt, rơ le của máy bơm, nếu phát hiện
-              hỏng hay không hoạt động thì cần phải thay mới và sửa chữa. Kiểm
+              hỏng hay không hoạt động thì cần phải thay mới và sửa chữa.</p> Kiểm
               tra tình trạng khô ráo của máy bơm, nếu bị nước ngập thì ta phải
               tháo máy bơm ra, nếu thấy động cơ bị cháy thì buộc phải thay dây
-              đồng bên trong động cơ.
+              đồng bên trong động cơ.<p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/sua-chua-may-bom.jpg"
+              src="https://Tuấn Đạt.vn/wp-content/uploads/2022/09/sua-chua-may-bom.jpg"
             />
             <h1>Khi nào nên tìm thợ sửa máy bơm nước ?</h1>
 
             <p>
+              <p>
               Có dịch vụ sửa máy bơm nước tại nhà tại nhà sẽ rất tiện lợi cho
               người sử dụng bởi tiết kiệm được thời gian, không cần mang thiết
-              bị ra tại cửa hàng mà vẫn an tâm về chất lượng sau sửa chữa. Vậy
-              hãy liên hệ đến điện nước Fisthome để sửa máy bơm nước ở khu vực
-              TPHCM khi: Máy bơm chạy nhưng không lên nước, nước lên yếu, máy
-              chạy liên tục không ngắt, máy bơm kêu to. Máy bơm bị rỉ nước, vỡ
+              bị ra tại cửa hàng mà vẫn an tâm về chất lượng sau sửa chữa.</p>
+              <p> Vậy
+              hãy liên hệ đến điện nước Tuấn Đạt để sửa máy bơm nước ở khu vực
+               khi: Máy bơm chạy nhưng không lên nước, nước lên yếu, máy
+              chạy liên tục không ngắt, máy bơm kêu to.</p> Máy bơm bị rỉ nước, vỡ
               đường ống, nước lúc lên lúc không. Máy bơm tăng áp kêu tạch tạch
               liên tục, không tự ngắt. Máy bơm không chạy, có mùi khét, nhanh
               nóng. Máy bơm bị cháy, rò điện…
@@ -174,7 +283,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -182,7 +291,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -191,7 +302,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -202,17 +313,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

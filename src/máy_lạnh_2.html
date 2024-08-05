@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Vệ sinh, bơm gas máy lạnh</h1>
+
+            <p>
+              Tuấn Đạt chuyên cung cấp dịch vụ bảo
+              trì vệ sinh máy lạnh trọn gói (hỗ trợ bơm gas máy lạnh) giúp máy
+              lạnh hoạt động hiệu quả và làm lạnh sâu hơn. Tuấn Đạt tự tin đem
+              đến cho quý khách hàng dịch vụ chuyên nghiệp và tối ưu nhất, giúp
+              khách hàng tiết kiệm tối đa thời gian và chi phí.
+            </p>
+
+            <img
+              src="../img/bình ga 2.jpg"
+              alt="hình"
+            />
+
+            <h3>Tuấn Đạt chuyên cung cấp các dịch vụ sau</h3>
+
+            <p>
+              <p>Vệ sinh máy lạnh, điều hòa treo tường.</p>
+              <p>Vệ sinh máy lạnh, điều hòa tủ đứng.</p>
+              <p>Vệ sinh máy lạnh, điều hòa âm trần.</p>
+              <p>Bơm gas máy lạnh (nạp gas điều hòa).</p>
+              <p>Nhận vệ sinh bảo trì tất cả các dòng máy lạnh, điều hòa.</p>
+              <p>Ngoài ra công ty còn hỗ trợ quý khách hàng trong các công việc như: Lắp đặt di dời máy lạnh cũ, mới tại TPHCM.</p>
+              <p>Sửa chữa máy lạnh bị hư hỏng (điều hòa không mát, máy lạnh phát ra tiếng kêu, máy lạnh chậm,…).</p>
+              <p>Đặc biệt với các đơn vị lắp đặt, sửa điều hòa như công ty, nhà hàng, khách sạn có số lượng > 5 máy, vui lòng liên hệ: 0837 857 277  để được hỗ trợ giá tốt nhất.</p>
+            </p>
+
+            <h1>Gói vệ sinh, bơm gas máy lạnh bao gồm các hạng mục sau</h1>
+
+            <p>
+              Vệ sinh xịt rửa dàn nóng và dàn lạnh Thông đường ống thoát nước
+              bằng vòi xịt áp xuất Kiểm tra lượng gas bên trong máy lạnh, châm
+              thêm để bảo đảm độ lạnh sâu cho máy Chế độ bảo hành 1 tháng (trong
+              trường hợp máy lạnh bị chảy nước)
+            </p>
+
+            <img
+              src="../img/máy lạnh 1.webp"
+              alt="hình"
+            />
+
+            <h1>Dấu hiệu nhận biết bạn cần bơm Gas máy lạnh</h1>
+
+            <p>
+              <p>Chớp tắt đèn báo lỗi: Đối với một vài dòng điều hoà có chức năng thông báo khi máy bị sự cố thì chớp tắt đèn báo lỗi cũng là dấu hiệu báo rằng điều hoà đang thiếu gas.</p>
+              <p>Điều hoà yếu lạnh: Khi điều hoà bị thiếu gas thì dấu hiệu thứ nhất có thể nhận biết được là điều hoà kém lạnh, tốn khá nhiều thời gian để làm lạnh căn phòng.</p>
+              <p>Chảy nước trên dàn lạnh: Khi điều hoà bị thiếu gas thì khả năng cao máy đang có dấu hiệu bị xì, làm cho dàn lạnh bám nhiều tuyết thậm chí đông đá bên trong dàn lạnh.</p>
+              <p>Do đó, dàn lạnh bị chảy nước cũng là một trong những dấu hiệu nhận biết điều hoà bị thiếu gas.</p>
+              <p>Tự động bật tắt: Điều hoà hoạt động khoảng 15 phút tự động bật – tắt cũng là dấu hiệu nhận biết điều hoà đang bị thiếu gas.</p>
+              <p>Khi điều hoà tự động bật – tắt, trước tiên quý khách cần kiểm tra lại các chế độ trên remote xem đã điều chỉnh chính xác chưa.</p>
+              <p>Nếu remote đã điều chỉnh chính xác thì nguyên do có thể là do hư hỏng phụ kiện ở trong.</p>
+              <p>Bám tuyết trên ống đồng: Khi ống đồng bị bám tuyết hoặc rò rỉ nước thì chắc chắn điều hoà của quý khách đang gặp phải sự cố rò rỉ và thiếu hụt gas.</p>
+              
+            </p>
+
+            <h3>Vì sao cần bơm gas điều hòa?</h3>
+
+            <p>
+              <p>Sau một thời gian sử dụng, điều hòa dân dụng và điều hòa công nghiệp thường bị hao gas, điều này dẫn đến tình trạng điều hòa làm lạnh kém, thậm chí là không lạnh.</p>
+<p>Khi điều hòa bị hao gas, lượng điện năng mà điều hòa tiêu thụ sẽ càng cao, hơn nữa còn gây hỏng block điều hòa, ảnh hưởng đến tuổi thọ của thiết bị.</p>
+<p>Do vậy, khi phát hiện điều hòa có những dấu hiệu bất thường như có mùi hôi, làm lạnh yếu, không lạnh, có hạt tuyết bám trên dàn lạnh, bị ngắt đột ngột, chảy nước xuống sàn nhà, chạy lâu vẫn không đạt nhiệt độ yêu cầu,… thì bạn cần liên hệ ngay với Công ty Điện lạnh Đà Nẵng để tiến hành bơm Gas máy lạnh.</p>
+
+            </p>
+
+            <h1>Dấu hiệu nhận biết cần phải vệ sinh điều hoà</h1>
+
+            <p>
+              <p>Khi bật điều hoà thấy bốc mùi hôi.</p>
+              <p>Điều hoà chạy nhưng cục nóng lại đơ không hoạt động.</p>
+              <p>Trong quá trình hoạt động điều hoà chảy nước.</p>
+              <p>Máy bị bám tuyết.</p>
+              <p>Máy bật lâu mà không đủ lạnh, chạy yếu.</p>
+              <p>Vì sao cần vệ sinh điều hoà định kỳ?</p>
+              <p>Điều hòa sử dụng lâu ngày sẽ khiến cho bộ lọc bám nhiều bụi bẩn, dẫn đến khả năng thanh lọc không khí bị suy giảm.</p>
+              <p>Thậm chí, lúc này bộ lọc sẽ trở thành ổ vi khuẩn gây ảnh hưởng đến sức khỏe của gia đình bạn.</p>
+              <p>Bụi bẩn cũng là nguyên nhân khiến cho điều hòa giảm khả năng làm lạnh, từ đó dẫn đến sự tiêu hao điện năng lớn.</p>
+              <p>Nếu không vệ sinh điều hoà theo định kỳ thì tuổi thọ của thiết bị sẽ “tụt dốc” nhanh chóng.</p>
+              <p>Do lớp bụi bẩn dày đặc khiến cho máy phải làm việc hết công suất trong thời gian dài.</p>
+              <p>Trên đây là những lý do mà bạn cần phải vệ sinh điều hòa theo định kỳ 3 – 4 tháng/lần.</p>
+              <p>Như vậy điều hòa nhà bạn sẽ làm lạnh hiệu quả và tiết kiệm điện năng tối ưu, đồng thời duy trì tuổi thọ.</p>
+              
+            </p>
+
+            <h3>Lợi ích của việc vệ sinh các thiết bị điện lạnh</h3>
+
+            <p>
+              <p>Bảo vệ sức khỏe: Ngoài chức năng làm mát, máy lạnh còn có khả năng lọc không khí với những tính năng như lọc bụi min, kháng khuẩn và khử mùi.</p>
+              <p>Vệ sinh máy lạnh thường xuyên giúp các tính năng trên hoạt động hiệu quả hơn, từ đó giúp lượng gió thổi ra từ máy lạnh trong lành và thoáng mát.</p>
+              <p>Người dùng có thể hạn chế được các tác nhân gây bệnh liên quan đến đường hô hấp, đặc biệt là đối với trẻ em và người cao tuổi có hệ miễn dịch yếu.</p>
+              <p>Tiết kiệm điện năng: Bụi bẩn bám trên dàn lạnh làm cho thiết bị cung cấp hơi lạnh chậm hơn, máy nén cần hoạt động nhiều hơn để cung cấp hơi lạnh, gây hao tốn điện năng trong gia đình.</p>
+              <p>Do đó, vệ sinh máy lạnh đình kỳ 3-6 tháng/lần giúp máy lạnh giảm tiêu hao điện năng hiệu quả, tiết kiệm chi phí khi sử dụng, đặc biệt là đối với những hộ gia đình dùng máy lạnh với cường độ cao.</p>
+              <p>Duy trì tuổi thọ máy lạnh: Bên cạnh việc vệ sinh máy lạnh định kỳ, người dùng cũng cần liên hệ nhân viên kỹ thuật đến kiểm tra và bơm gas máy lạnh nếu phát hiện máy lạnh hoạt động kém hiệu quả, lượng gió tỏa ra yếu và không mát.</p>
+              <p>Bơm gas đúng lúc giúp duy trì tuổi thọ máy lạnh, tiết kiệm điện năng và mang lại cảm giác thoải mái cho người dùng, bởi nếu đã hạ nhiệt độ nhưng máy lạnh vẫn không lạnh thì người dùng có thể cảm thấy phiền toái và khó chịu.</p>
+              
+            </p>
+
+            <h1>Quy trình vệ sinh, nạp gas máy lạnh</h1>
+
+            <p>
+              <p>1. Tiếp nhận thông tin: Tuấn Đạt tiếp nhận thông tin của khách hàng nhanh chóng, qua tổng đài của công ty.</p>
+              <p>2. Kiểm tra báo giá: Kiểm tra tình trạng hoạt động máy lạnh, báo giá dịch vụ vệ sinh bảo trì theo khung giá quy định của công ty.</p>
+              <p>3. Tiến hành sửa chữa: Cử đội thợ đến vệ sinh, bơm gas máy lạnh theo đúng yêu cầu kỹ thuật sau khi khách hàng đã đồng ý với mức giá.</p>
+              <p>4. Bàn giao thanh toán: Sau khi sửa xong, kiểm tra vận hành thiết bị trước khi bàn giao, và dán tem bảo hành, viết phiếu thanh toán cho khách hàng.</p>
+              <p>5. Bảo hành hậu mãi: Chế độ bảo hành dài hạn sau khi sửa chữa.</p>
+              <p>Tuấn Đạt có nhiều chế độ ưu đãi dành cho khách hàng cũ và khách hàng sử dụng dịch vụ lần đầu.</p>
+              
+            </p>
+
+            <img src="../img/máy lạnh 4.jpg" alt="hình">
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

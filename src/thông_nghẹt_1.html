@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Thông tắc thoát sàn, ống thoát nước thải</h3>
+
+            <h1>Thông tắc thoát sàn, ống thoát nước thải Hồ Chí Minh uy tín</h1>
+
+            <p><p>
+              Tuấn Đạt là đơn vị sửa chữa điện nước, chuyên
+              cung cấp dịch vụ Thông tắc thoát sàn, ống thoát nước</p>
+              <p>
+              Tất cả các dịch vụ về Thông tắc bồn rửa, thông tắc cống chúng tôi
+              luôn sẵn sàng phục vụ. Sẵn sàng có mặt trên địa bàn trong bất kể
+              thời gian nào trong ngày.</p>
+              <p> Khi gặp sự cố về hệ thống sàn nhà, cầu
+              cống xuống cấp, tràn hầm cầu, nghẹt cầu cống làm hoạt động hằng
+              ngày của quý vị bị gián đoạn.</p> Quý vị không thể tự khắc phục được
+              sự cố, hay làm giảm nguy cơ ô nhiễm, hãy liên hệ ngay cho Tuấn Đạt
+              để được tư vấn và hỗ trợ kịp thời.
+            </p>
+
+            <img
+              src="../img/thông nghẹt2.jpg"
+              alt="hình"
+            />
+            <h3>Thông tắc thoát sàn</h3>
+
+            <p>
+              Nhanh chóng tìm ra nguyên nhân khiến bộ phận thoát nước bị tắc,
+              hỏng Chuyên thông tắc sàn phòng tắm, thông tắc sàn nhà chính, sàn
+              ban công,… Đảm bảo dịch vụ chuyên nghiệp, giá rẻ
+            </p>
+
+            <h3>Thông tắc ống thoát nước thải</h3>
+
+            <p>
+              Thông tắc ống thoát nước thải triệt để Nhận thông tắc ống thoát
+              nước thải với hệ thống thoát nước cũ, khó làm Thông tắc triệt để,
+              đảm bảo vệ sinh sau khi hoàn thiện
+            </p>
+
+            <h1>Tuấn Đạt Chuyên Cung Cấp Thông Tắc Cống Khác Như:</h1>
+
+            <p>
+              <p>
+              Thông Tắc Cống HCM, chậu rửa, thoát sàn, nhà vệ sinh… cho tất cả
+              các hộ gia đình, các cơ quan, đoàn thể, doanh nghiệp.</p><p> Thông tắc
+              bồn cầu, toilet triệt để, giá rẻ nhất và tốt nhất Rút hầm cầu, hố
+              ga, cống rãnh, chất thải công nghiệp bằng các máy móc hiện đại
+              tránh gây ra các mùi hôi khó chịu.</p><p> Xây dựng và lắp đặt hệ thống
+              thoát nước gia đình, chung cư, hoặc tại các công ty ,….</p><p> Nạo vét hố
+              ga cũ , Xây dựng hầm mới, sữa chữa hầm cũ, nâng hầm, lót gạch,…</p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

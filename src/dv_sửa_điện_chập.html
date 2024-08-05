@@ -23,33 +23,63 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
 
                   <h3 style="text-align: center">
-                      Dịch vụ sửa chữa điện nước tại nhà !
+                    Dịch vụ sửa chữa điện nước tại nhà !
                   </h3>
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">
-                      0837 857 277
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
                   </button>
-                    <br>
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -59,14 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
 
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- ---------------------------------------------------------------------- -->
 
     <main class="main">
@@ -77,23 +176,26 @@
 
             <p>
               Sửa chập điện khẩn cấp là dịch vụ thường xuyên được yêu cầu tại
-              Fisthome. Tình trạng này rất hay xảy ra do sơ xuất của người
+              Tuấn Đạt. Tình trạng này rất hay xảy ra do sơ xuất của người
               dùng,hay thậm chí là do hệ thống điện và thợ điện đã làm sai kỹ
               thuật, tiêu chuẩn từ lúc bắt đầu tiến hành lắp đặt hệ thống điện.
               Với đội ngũ thợ sửa chập điện có kinh nghiệm, kỹ thuật cao cùng
-              với máy móc hiện đại. Fisthome đã xử lý rất nhiều trường hợp sự cố
-              chập điện cho khách hàng với nhiều nguyên nhân rất đa dạng. Sửa
-              chập điện khẩn cấp rất quan trọng nên yếu tố tiên quyết là phải
-              tìm đúng nguyên nhân và xử lý triệt để cho khách hàng. Tự tin với
-              đội kỹ thuật lành nghề Fisthome sẽ đem lại trải nghiệm dịch vụ tốt
-              nhất dành cho khách hàng !
+              với máy móc hiện đại. Tuấn Đạt đã xử lý rất nhiều trường hợp sự cố
+              chập điện cho khách hàng với nhiều nguyên nhân rất đa dạng.
+            </p>
+
+            <p>
+              Sửa chập điện khẩn cấp rất quan trọng nên yếu tố tiên quyết là
+              phải tìm đúng nguyên nhân và xử lý triệt để cho khách hàng. Tự tin
+              với đội kỹ thuật lành nghề Tuấn Đạt sẽ đem lại trải nghiệm dịch vụ
+              tốt nhất dành cho khách hàng !
             </p>
           </div>
         </div>
 
         <div class="row">
           <img
-            src="https://fisthome.vn/wp-content/uploads/2023/04/sua-dien-am-tuong.jpg"
+            src="../img/Electrical-Engineer-job-openings-Qatar-1140x445.jpg"
             alt="Hình"
           />
         </div>
@@ -120,26 +222,36 @@
 
           <p>
             Ngắn mạch,đoản mạch là hiện tượng mạch điện bị điện chập,đây cũng là
-            cách nói khác của sự cố điện chạm chập. Những công việc cần làm ngay
+            cách nói khác của sự cố điện chạm chập.</p>
+            <p>
+            Những công việc cần làm ngay
             và cách xử lý khi nhà bạn có hiện tượng bị chập điện Mất điện bạn
-            phải làm sao? Các cách xử lý khi nhà bị sự cố điện bạn cần tuân theo
-            3 tiêu chí bên dưới của Fisthome,vấn đề tiên quyết bạn làm càng
+            phải làm sao?</p>
+            <p> Các cách xử lý khi nhà bị sự cố điện bạn cần tuân theo
+            3 tiêu chí bên dưới của Tuấn Đạt,vấn đề tiên quyết bạn làm càng
             nhanh càng tốt trước khi bạn tiến hành gọi thợ sửa chập điện khẩn
-            cấp của chúng tôi! 1/ Bạn đừng cố gắng bật lại Aptomat(cầu dao) nếu
+            cấp của chúng tôi! </p>
+            <p>
+            1/ Bạn đừng cố gắng bật lại Aptomat(cầu dao) nếu
             bạn không hiểu rõ nguyên nhân gây chập điện. Khi Aptomat( cầu dao)
             đã nhảy sang chế độ OFF, dù bạn có cố gắng bật ON nhưng Aptomat(cầu
             dao) sẽ luôn chuyển sang chế độ OFF, bạn không nên bật lại như vậy
-            vì có thể gây nên hiện tượng cháy nổ rất nguy hiểm. 2/ Rút tất cả
+            vì có thể gây nên hiện tượng cháy nổ rất nguy hiểm. </p>
+            <p>
+            2/ Rút tất cả
             các thiết bị sử dụng điện trong nhà để tránh gây tổn thất hư hỏng.Ví
             dụ : phích cắm cho các thiết bị, tủ lạnh, lò vi sóng, ti vi, máy
-            giặt… 3/ Cần quan sát các vị trí đã từng cháy nổ trước đó: có mùi
+            giặt… </p>
+            <p>
+            3/ Cần quan sát các vị trí đã từng cháy nổ trước đó: có mùi
             khét,tiếng kêu xẹt xẹt,các vết ẩm trên tường,hoặc thiết bị có vết
             cháy…Cách này có thể hỗ trợ cho thợ sửa chập điện dễ dàng phát hiện
             và chuẩn đoán nguyên nhân.
+            </p>
           </p>
 
           <img
-            src="https://fisthome.vn/wp-content/uploads/2023/05/sua-bong-den.jpg"
+            src="../img/2a1a092943a6e6f8bfb7.jpg"
             alt="hình"
           />
         </div>
@@ -148,23 +260,30 @@
           <h1>Các nguyên nhân dẫn tới hiện tượng chập điện</h1>
 
           <p>
+            <p>
             Qua kinh nghiệm sửa chập điện lâu năm và đã gặp nhiều trường
-            hợp-Fisthome đúc kết ra được một vài nguyên nhân: Tình trạng nhảy
+            hợp-Fisthome đúc kết ra được một vài nguyên nhân:</p>
+            <p> Tình trạng nhảy
             Aptomat (Cầu dao) do Aptomat không đủ tải, dòng cắt hoặc đã hư hỏng.
             Các thiết bị Aptomat có chỉ số nhỏ: 16A,20 A, 30 A, 42 A… sẽ không
             đủ tải để sử dụng cho một tầng hay toàn bộ căn nhà, nhà hàng,khách
             sạn… với rất nhiều các thiết bị có công suất lớn như điều hòa, tủ
             lạnh ,lò vi sóng, bếp hồng ngoại… có thể gây quá tải,gây nên sự cố
-            điện (Như Hình 1). Sử dụng các thiết bị điện kém chất lượng (Như
+            điện (Như Hình 1).</p>
+            <p> Sử dụng các thiết bị điện kém chất lượng (Như
             hình 2),trường hợp này ổ cắm điện kém tiếp xúc, không chịu nổi tải
             đã cháy gây ra tình trạng chập điện.Xấu hơn nữa, trong trường hợp
             này CB cũng không hoạt động do sử dụng phải thiết bị kém chất lượng
-            không có nguồn gốc xuất xứ. Điện chập nguyên nhân do quá trình thi
+            không có nguồn gốc xuất xứ.</p>
+            <p> Điện chập nguyên nhân do quá trình thi
             công không đảm bảo (tính toán dây không đủ tải, các mối nối kém chất
-            lượng…(Như hình 3,5,6) Sự cố chập điện đôi lúc do tác nhân từ bên
+            lượng…(Như hình 3,5,6)</p>
+            <p> Sự cố chập điện đôi lúc do tác nhân từ bên
             ngoài như dây điện bị chuột cắn,nước mưa,ẩm ướt, nước ngầm rò rỉ vào
             thiết bị điện (Như hình 4). sửa chập điện nguyên nhân do aptomat
             không đủ tải
+            </p>
+
           </p>
         </div>
 
@@ -172,34 +291,46 @@
           <h1>Cách tránh chập điện mất điện trong nhà</h1>
 
           <p>
+            <p>
             Tránh sử dụng nhiều ổ cắm cùng lúc và tránh làm quá tải bất kỳ một
             phích cắm nào Hãy tập thói quen kiểm tra bộ phận bảo vệ mạch điện
-            của bạn. Chú ý kỹ đến tình trạng việc đi dây điện nổi trong nhà dẫn
+            của bạn.</p>
+            <p>
+             Chú ý kỹ đến tình trạng việc đi dây điện nổi trong nhà dẫn
             điện. Dây điện có thể bị mòn hoặc lớp bảo vệ dây thực sự có thể bị
             đứt theo thời gian, khiến dây bị hở. Điều này có thể khá nguy hiểm
             và có thể dẫn đến chập điện cháy nhà Điều quan trọng khi mua, lắp
             đặt và sử dụng một thiết bị điện là bạn phải tham khảo sách hướng
-            dẫn và tự làm quen với khả năng chịu tải phù hợp của thiết bị đó.
+            dẫn và tự làm quen với khả năng chịu tải phù hợp của thiết bị đó.</p>
+            <p>
             Điều quan trọng cần hiểu là vì thiết bị của bạn quá tải có thể dẫn
             đến chập điện mất điện.
+            </p>
           </p>
         </div>
 
         <div class="row">
           <h1>Nên làm gì khi bị chập điện tại nhà?</h1>
 
-           <p>Điện rất quan trọng đối với mọi
-          người và mọi nhà. Tuy nhiên, nếu hệ thống điện của nhà bạn xuất hiện
-          sự cố, thì bạn đừng cố gắng tự giải quyết vấn đề. ⇒ Liên hệ với các
-          thợ sửa điện dân dụng có tay nghề cao và được chứng nhận tại Fisthome
-          để xác định vấn đề của bạn và đưa ra cách xử lý nhà bị chập điện an
-          toàn và hiệu quả. Hãy đặt niềm tin của bạn vào tay một số nhân viên
-          giỏi nhất trong ngành. Lên lịch kiểm tra tại nhà hệ thống điện của bạn
-          ngay hôm nay!</p>
+          <p>
+            <p>
+            Điện rất quan trọng đối với mọi người và mọi nhà. 
+            </p>
+            <p>
+            Tuy nhiên, nếu hệ
+            thống điện của nhà bạn xuất hiện sự cố, thì bạn đừng cố gắng tự giải
+            quyết vấn đề.</p>
+            <p>
+             ⇒ Liên hệ với các thợ sửa điện dân dụng có tay nghề
+            cao và được chứng nhận tại Tuấn Đạt để xác định vấn đề của bạn và
+            đưa ra cách xử lý nhà bị chập điện an toàn và hiệu quả. Hãy đặt niềm
+            tin của bạn vào tay một số nhân viên giỏi nhất trong ngành. </p>
+            <p>Lên lịch
+            kiểm tra tại nhà hệ thống điện của bạn ngay hôm nay!</p>
+          </p>
         </div>
       </div>
     </main>
-
 
     <!-- ----------------------------------------------------------------------- -->
 
@@ -207,7 +338,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -215,7 +346,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -224,7 +357,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -235,17 +368,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

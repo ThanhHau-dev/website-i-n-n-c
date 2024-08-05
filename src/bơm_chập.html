@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <h1>Sửa chập điện máy bơm, rò rỉ nước, lắp đặt phao chống tràn</h1>
+        
+                  <h3>Sửa chập điện máy bơm, rò rỉ nước,lắp đặt phao chống tràn</h3>
+        
+                  <p>
+                    Chúng tôi chuyên cung cấp thợ sửa chập điện máy bơm, rò
+                    rỉ nước, lắp đặt phao chống tràn.<p> Chính vì thế khi gặp phải những sự
+                    cố tràn bồn chứa, mất nước,…</p><p>  Hãy gọi ngay cho chúng tôi để hỗ trợ kịp
+                    thời.</p><p> Sửa chập điện máy bơm, rò rỉ nước,lắp đặt phao chống tràn Sửa
+                    chập điện máy bơm, rò rỉ nước,lắp đặt phao chống tràn Với đội ngũ
+                    thợ có nhiều năm kinh nghiệm sửa chữa hệ thống nước, cơ sở vật chất
+                    hiện đại.</p><p> Và phục vụ tại tất cả các quận trên địa bàn TPHCM thì
+                    chúng tôi tin chắc rằng sẽ hỗ trợ quý khách tốt nhất với chi phí rẻ
+                    nhất.</p><p> Cam kết đã sửa là phải hết! Ngoài sửa chập điện máy bơm, rò rỉ
+                    nước,</p><p> lắp đặt phao chống tràn, chúng tôi còn nhận lắp bồn nước inox,
+                    bồn nhựa, di dời bồn nước, vệ sinh bồn nước, bể nước ngầm, thông tắc
+                    cầu cống nghẹt, sửa điện nước, dò tìm rò rỉ nước,…</p>
+                  </p>
+        
+                  <h1>Ưu điểm khi sử dụng dịch vụ sửa bồn nước chống tràn của Tuấn Đạt</h1>
+        
+                  <p>
+                    <p>– Đội ngũ nhân viên, đội thợ có trên nhiều năm kinh nghiệm lắp phao
+                    điện, phao cơ bồn nước.</p><p> – Hỗ trợ kiểm tra, tư vấn miễn phí ngay khi
+                    liên hệ với chúng tôi qua hotline: 0837 857 277</p><p> – Thợ giỏi được
+                    trang bị đầy đủ về cơ sở vật chất, vật liệu sử dụng luôn là hàng
+                    chính hãng.</p><p> – Đội thợ nhiệt tình khi làm việc, không phát sinh giá
+                    khi sửa chữa.</p><p> – Khắc phục triệt để các sự cố, cam kết sửa không hết
+                    sẽ hoàn tiền.</p> – Tuấn Đạt bảo hành dịch vụ rõ ràng và có phiếu thu
+                    đầy đủ sau khi sửa chữa, lắp đặt.
+                  </p>
+        
+                  <img
+                    src="../img/bơm 7 .jpg"
+                    alt="hình"
+                  />
+        
+                  <h1>Các vấn đề hay gặp phải trên bồn chứa nước:</h1>
+        
+                  <p>
+                    <p>
+                    Hóa đơn tiền nước tăng bất thường, nước trên bồn tràn ra ngoài làm
+                    tốn chi phí hàng tháng.</p><p> Bồn chứa nước tự dưng mất đột ngột hoặc nước
+                    nhanh cạn mà không hiểu vì sao?</p> Khi hết nước thì phải chạy đi mở CB
+                    điện để máy bơm hoạt động trở lại? Bồn nước của bạn và gia đình bị
+                    tràn vào ban đêm dù đã thay phao cơ chống tràn rồi?
+                  </p>
+        
+                  <img
+                    src="../img/bơm 3.gif"
+                    alt="hình"
+                  />
+        
+                  <h1>Dịch vụ sửa phao bồn nước bị tràn của Tuấn Đạt bao gồm:</h1>
+        
+                  <p>
+                    <p>
+                    -Sửa chữa, lắp đặt, thay phao cơ bồn chứa nước. -Lắp đặt và sửa
+                    chữa, thay phao điện tự động bơm ngắt nước.</p>
+                    <p> -Sửa chữa bồn nước bị
+                    tràn làm tăng chi phí sinh hoạt, sửa đường ống nước cho bồn chứa.
+                    </p><p>-Sửa đường ống nước cấp nước lên bồn, có nước trên bồn nhưng không
+                    xuống,…</p><p> -Lắp đặt, thay máy bơm nước tăng áp cho bồn nước, bơm đẩy
+                    cao.</p><p> -Lắp bồn chứa nước cho hộ gia đình, công ty: bồn nước inox, bồn
+                    nhựa,…</p><p> -Vệ sinh các bồn nước cho gia đình và căn hộ, chung cư,….</p><p> –
+                    Sửa chữa và dò tìm rò rỉ nước ngầm.</p> – Nhân viên kỹ thuật, đội thợ
+                    nhiều kinh nghiệm, hỗ trợ tư vấn nhiệt tình, báo giá hoàn toàn miễn
+                    phí.
+                  </p>
+        
+                  <img
+                    src="../img/sua-phao-co-bon-nuoc.jpg"
+                    alt="hình"
+                  />
+        
+                  <h1>
+                    Quy trình cung cấp thợ sửa phao điện, phao cơ bồn nước của Tuấn Đạt
+                    như sau:
+                  </h1>
+        
+                  <p>
+                    <p>
+                    Khi Tuấn Đạt nhận được yêu cầu sửa bồn nước bị tràn hoặc mất nước từ
+                    quý khách chúng tôi sẽ cử nhân viên ở gần khu vực của quý khách đến
+                    hỗ trợ.</p><p> Đội thợ của chúng tôi sẽ đến kiểm tra tình trạng thực tếvà
+                    đưa ra hướng giải quyết nhanh nhất. Chúng tôi sẽ báo giá cụ thể và
+                    tư vấn khách hàng về phao điện, phao cơ để thay thế phù hợp nhất.</p><p>
+                    Sau khi quý khách đồng ý Tuấn Đạt sẽ sửa bồn nước bị tràn theo đúng
+                    yêu cầu về chất lượng và thời gian.</p> Kiểm tra và nghiệm thu công việc
+                    đã làm sau khi đã sửa xong. Sau cùng chúng tôi sẽ giao hóa đơn cũng
+                    như bảo hành rõ ràng cho quý khách theo đúng quy định.
+                  </p>
+        
+                  <h1>
+                    Ngoài sửa phao bồn nước chúng tôi còn cung cấp các dịch vụ sau:
+                  </h1>
+        
+                  <p>
+                    <p>
+                    Lắp đặt, sửa chữa điện nước cho căn hộ, gia đình, công ty, showroom,
+                    quán cafe, trường học,…</p> Cứu hộ, sửa nhanh các sự cố chập điện, mất
+                    điện đột ngột không rõ nguyên nhân.</p><p> Lắp đặt, sửa các thiết bị điện
+                    dân dụng, bóng đèn, công tắc, ổ cắm,…</p><p> Lắp đặt quạt điện, quạt treo
+                    tường, quạt thông gió, quạt trần cho hộ gia đình,…</p><p> Lắp đặt, sửa bồn
+                    cầu, sửa lavabo, sửa chậu rửa chén bát, sửa van vòi nước,… Chống
+                    thấm dột nhà tắm,sân thượng, ban công, nhà vệ sinh, sửa chữa, vệ
+                    sinh máy lạnh,…</p><p> Thông nghẹt bồn cầu, lavabo, chậu rửa chén bát, nhà
+                    tắm, nhà vệ sinh bị nghẹt,…</p> Dò tìm rò rỉ nước, bục vỡ ống nước âm
+                    sàn, âm tường và sửa chữa nhanh chóng.
+                  </p>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+
+  </body>
+</html>

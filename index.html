@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dịch vụ sửa chữa điện nước tại nhà giá rẻ Tuấn Đạt"
+    />
+    <meta
+      name="keywords"
+      content="sửa điện, sửa ống nước, sửa máy lạnh, sửa máy bơm, giá rẻ"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Tuấn Đạt" />
+    <link rel="icon" href="/img/icon.webp" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,17 +22,14 @@
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />
-    <!-- <link href="./style/aos-master/dist/aos.css" rel="stylesheet">
-    <script src="./style/aos-master/dist/aos.js"></script> -->
-
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-
+    />  
     <link rel="stylesheet" href="./style/index.css" />
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+
     <title>Sửa chữa điện nước</title>
   </head>
   <body>
-    
     <header class="header">
       <section>
         <div class="header_1">
@@ -30,33 +38,54 @@
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
                   <!-- <h1 id="logo">Tuấn Đạt</h1> -->
-                   <img id="img_logo" src="./img/logo mẫu của khỉ 2k.png">
+                  <a href="index.html">
+                    <img id="img_logo" src="./img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="#sua_nuoc" class="nav-link">Sửa nước</a>
+                    <a href="#sua_bom" class="nav-link">Sửa máy bơm</a>
+                    <a href="#thong_nghet" class="nav-link">Thông nghẹt</a>
+                    <a href="#dien_lanh" class="nav-link">Điện lạnh</a>
                   </nav>
 
                   <br />
 
                   <h3 style="text-align: center">
-                      Dịch vụ sửa chữa điện nước tại nhà !
+                    Dịch vụ sửa chữa điện nước tại nhà !
                   </h3>
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">
-                      0837 857 277
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
                   </button>
-                    <br>
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -64,34 +93,84 @@
         </div>
       </section>
 
-      <section>
-        <div class="header_2">
-          <img
-            src="./img/Electrical-Engineer-job-openings-Qatar-1140x445.jpg"
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
-        </div>
-      </section>
+     
     </header>
 
     <div class="header_mobile">
       <div class="d-flex justify-content-between align-items-center py-3">
         <!-- Logo -->
-        <img src="./img/logo mẫu của khỉ 2k.png" alt="Logo" class="logo">
+        <img src="./img/logo mẫu của khỉ 2k.png" alt="Logo" class="logo" />
 
         <!-- Dropdown -->
         <div class="dropdown">
-            <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class='bx bx-list-ul'></i>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#sua_dien">Sửa điện</a></li>
+            <li><a class="dropdown-item" href="#sua_nuoc">Sửa nước</a></li>
+            <li><a class="dropdown-item" href="#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="#dien_lanh">Điện lạnh</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-    </div>
+
+
+    <section>
+      <div class="header_2">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <h2>
+                <i class="bx bxs-check-square"></i>
+
+                Lắp đặt sửa chữa điện nước
+              </h2>
+
+              <h2>
+                <i class="bx bxs-check-square"></i>
+
+                Sửa chữa-Lắp đặt máy bơm nước
+              </h2>
+
+              <h2>
+                <i class="bx bxs-check-square"></i>
+
+                Thông tắc cầu cống 24/7
+              </h2>
+
+              <h2>
+                <i class="bx bxs-check-square"></i>
+
+                Sửa chữa điện lạnh tại nhà
+              </h2>
+
+              <h2>
+                <i class="bx bxs-check-square"></i>
+                Sửa chữa cải tạo nhà cửa
+              </h2>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="header_2_1">
+                <img
+                  src="img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -99,7 +178,13 @@
       <div class="main_1">
         <div class="container">
           <div class="row align-self-center">
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6">
+              <img
+                src="./img/383825943_3234772456816135_8075200814708357834_n.jpg"
+              />
+            </div>
+
+            <div class="col-md-6 align-self-center mt-3">
               <p><i>Giới thiệu về kỹ thuật viên</i></p>
               <h1>Hoàng Tuấn Đạt</h1>
               <hr />
@@ -111,142 +196,131 @@
                 villa cao cấp.
               </p>
 
-              <button class="btn btn-danger">Xem thêm</button>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./img/383825943_3234772456816135_8075200814708357834_n.jpg"
-              />
+              <a href="#info_more">
+                <button class="btn btn-danger">Xem thêm</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div class="main_2">
-        <section>
+        <section id="sua_dien">
           <div class="container">
             <h1>| Dịch vụ sửa điện</h1>
             <div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/dv_sửa_điện_chập.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/2a1a092943a6e6f8bfb7.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Đây là sự cố hết sức nguy hiểm, tuy nhiên lại thường
+                        xuyên xảy ra do sự bất cẩn của người dùng, hay thậm chí
+                        là do thợ điện làm sai quy trình, tiêu chuẩn.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="./src/dv_sửa_lắp_đặt_điện.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/cac-bien-phap-an-toan-khi-sua-chua-dien-co-ban-ban-nen-biet.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa chữa, lắp đặt điện</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Sửa điện dân dụng tại nhà vốn dĩ là công việc nguy hiểm,
+                        đặc biệt là ở các điện áp dây trong nhà. Thợ sửa điện
+                        thiếu thận trọng có thể dẫn đến bị điện giật nguy hiểm
+                        đến tính mạng hoặc hỏa hoạn.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/điện_sửa_CB.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/MCCB.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Lắp đặt, sửa chữa bóng đèn, CB, cầu dao, ổ cắm ...
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Việc lắp đặt các thiết bị công tắc – sửa điện nhà có thể
+                        rất phức tạp, đó là lý do tại sao bạn có thể…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/điện_âm_tường.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/60b49dbc8f332a6d732223.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Đi dây điện âm tường</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Đi dây điện âm tường, cách đi ống điện âm sàn tức là thi
+                        công mạng điện âm tường dựa trên thiết kế mạng điện
+                        chìm, chạy bên trong của tường hoặc dưới đất.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/điện_đồng_hồ.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/bao-gia-cong-to-dien-1-pha-va-3-pha-4.avif"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Lắp đồng hồ kiểm định 1P, 3P</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Dịch vụ lắp đồng hồ kiểm định 1P, 3P Tuấn Đạt chuyên
+                        cung cấp dịch vụ lắp đồng hồ kiểm định 1P, 3P; dịch vụ
+                        lắp…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="./src/điện_lắp_thiết_bị.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/c113d614c49b61c5388a22.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Lắp đặt thiết bị điện dân dụng</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Dịch vụ lắp đặt điện tại nhà Đối với tất cả các thiết bị
+                        điện dân dụng bạn có thể tin tưởng vào Tuấn Đạt để…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -259,131 +333,130 @@
           </div>
         </section>
 
-        <section>
+        <section id="sua_nuoc">
           <div class="container">
             <h1>| Dịch vụ sửa đường ống nước</h1>
             <div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/nước_rò_rỉ.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/8b8f0dcf4540e01eb9517.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Sửa rò rỉ ống nước, dò tìm ống nước
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Bài viết dưới đây Tuấn Đạt sẽ giới thiệu cách xác định
+                        vị trí rò rỉ nước ngầm trong tường, sàn nhà. Hướng dẫn
+                        khách hàng…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/nước_sửa_vòi.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/sua-voi-nuoc-rua-bat-bi-ro-ri.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa vòi nước, bồn cầu, lavabo</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Các thiết bị vệ sinh như vòi nước, bồn cầu, lavabo là
+                        các thiết bị phổ biến không thể thiếu trong mọi gia
+                        đình. Tuy…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/nước_vs_bồn.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/1e75bb18f09755c90c86.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Vệ sinh bồn nước</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Bồn nước của các hộ gia đình sau một thời gian sử dụng
+                        sẽ để lại…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/nước_lắp_đặt.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/voi-xit-ve-sinh-bi-ri-nuoc-3.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Lắp đặt đường ống nước, thiết bị vệ sinh
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Khi có nhu cầu lắp đặt hay mở rộng hệ thống cấp nước cho
+                        công trình, người dùng thường phân vân, đắn đo lựa chọn
+                        và tìm kiếm giải pháp.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="./src/nước_sửa_nước.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/cach-chua-sua-voi-nuoc.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Sửa hệ thống nước trong sinh hoạt
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Dịch vụ sửa chữa hệ thống nước trong sinh hoạt tại Tuấn
+                        Đạt là gói dịch vụ được khách hàng sử dụng nhiều nhất
+                        với các hạng mục đa dạng và giá thành tốt.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/nước_bồn_nước.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/tuoi-tho-su-dung-cua-cac-loai-bon-nuoc-inox-2.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Dịch vụ vệ sinh bồn nước</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Hiện nay, hầu hết các hộ gia đình ở thành phố, sống ở
+                        nhà cao tầng đều sử dụng bồn nước trên cao để tích trữ
+                        nước để tránh tình trạng nước không ổn định khi sử dụng.
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -396,131 +469,105 @@
           </div>
         </section>
 
-        <section>
+        <section id="sua_bom">
           <div class="container">
             <h1>| Dịch vụ sửa chữa máy bơm tại nhà</h1>
             <div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_chập.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/bơm 1.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa máy bơm bị chập cháy</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Sửa máy bơm nước Tuấn Đạt – Máy bơm nước là một trong
+                        những thiết bị được sử dụng nhiều nhất trong cấp thoát
+                        nước sinh hoạt…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_kêu_to.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/bơm 4.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa máy bơm bị kêu to</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Nếu như gia đình bạn đang sử dụng máy bơm nước và gặp
+                        tình trạng máy bơm nước kêu to, phát ra âm thanh chói…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_yếu.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/bơm 9 .jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Bơm nước yếu</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Tại HCM, Hà Nội và các tỉnh thành khác việc sử dụng máy
+                        bơm nước vẫn là việc hết sức phổ biến. Tuy nhiên máy…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_sửa_tại_nhà.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/bơm 10.webp" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa bơm tại nhà</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Sửa máy bơm nước gia đình tại Hồ Chí Minh – Bình Dương
+                        Dịch vụ trọn gói giá rẻ tại Tuấn Đạt Tuấn Đạt chuyên
+                        cung cấp dịch vụ…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_lắp_đặt_tại_nhà.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/bơm 2.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Lắp đặt bơm đẩy, bơm tăng áp</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Lắp đặt máy bơm đẩy, bơm tăng áp chính hãng
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/bơm_sửa_máy.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/may-bom-nuoc-tang-ap-tu-dong-jlm-60-200a-jlm-gn25-200a-200w.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa chập điện máy bơm, rò rỉ</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Sửa chập điện máy bơm, rò rỉ nước,lắp đặt phao chống
+                        tràn
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -533,115 +580,100 @@
           </div>
         </section>
 
-        <section>
+        <section id="thong_nghet">
           <div class="container">
             <h1>| Dịch vụ thông nghẹt</h1>
             <div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/thông_nghẹt_1.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/thông nghẹt.webp" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Thông tắc thoát sàn, ống thoát nước thải
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Thông tắc thoát sàn, ống thoát nước uy tín Tuấn Đạt là
+                        đơn vị về sửa chữa điện…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/thông_nghẹt_2.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/thông nghẹt 1.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Thông nghẹt WC, bồn cầu, lavabo
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Thông nghẹt wc, bồn cầu, lavabo, chậu rửa chén,… nhanh
+                        chóng, triệt để
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/thông_nghet_3.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/thong-bon-cau-my-duc-2.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa bồn cầu bị tắc tại nhà</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Tình trạng bồn cầu bị tắc, bồn cầu bị nghẹt thường khiến
+                        chúng ta cảm thấy bức bối và khó chịu, vậy sao không tìm
+                        đến Tuấn Đạt đơn vị sửa bồn cầu tắc
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="./src/thông_nghẹt_4.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/thông nghẹt.jpeg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Thông cống nghẹt tại nhà</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Cống bị nghẹt là một trong các tình trạng không tốt đẹp
+                        nhưng lại thường xuyên diễn ra chủ yếu do lắp đặt sai vị
+                        trí khiến cống không thoát được nước gây ứ đọng dẫn đến
+                        bị nghẹt.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/thông_nghẹt_5.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/1.png" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Hút hầm cầu, bể phốt</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Hút hầm cầu, bể phốt uy tín giá rẻ. Trong quá trình sử
+                        dụng lâu dài nguyên nhân gây nên việc…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
+                  <!-- <div class="card">
                     <img
                       class="card-img-top"
                       src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
@@ -657,7 +689,7 @@
                       Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
                       và nguồn điện xoay chiều (AC).
                     </p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -670,131 +702,113 @@
           </div>
         </section>
 
-        <section>
+        <section id="dien_lanh">
           <div class="container">
             <h1>| Dịch vụ sửa chữa điện lạnh</h1>
             <div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/máy_lạnh_1.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/máy lạnh 1.webp" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa máy lạnh tại nhà</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Bảo trì máy lạnh, bảo dưỡng máy lạnh là công việc có
+                        tính chất định kỳ mà có thể bao gồm tất cả hoặc một số
+                        hạng mục đơn giản là vệ sinh máy lạnh
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/máy_lạnh_2.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/bom-gas-dieu-hoa.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Vệ sinh bơm gas máy lạnh</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        sửa chữa Điện Nước Tuấn Đạt chuyên cung cấp dịch vụ bảo
+                        trì vệ sinh máy lạnh trọn gói (hỗ trợ bơm gas máy…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/máy_lạnh_3.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/main máy lạnh.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Sửa block máy lạnh, máy nén, dàn nóng, dàn lạnh
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Sửa chữa Điện Nước Tuấn Đạt xin giới thiệu dịch vụ Sửa
+                        block máy lạnh,…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/máy_lạnh_4.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/ống đồng 1.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">
+                        Lắp ống đồng, bảo ôn, thoát nước
+                      </h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Lắp đặt ống đồng cho máy lạnh Tuấn Đạt sửa chữa điện
+                        nước uy tín tại HCM, chuyên lắp đặt ống đồng, bảo…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="src/máy_lạnh_5.html">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/máy lạnh âm tường 1.jpg"
+                      />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Lắp đặt máy lạnh âm tường</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        KHI CẦN LẮP ĐẶT MÁY LẠNH GẮN TƯỜNG, ÂM TRẦN CÁC BẠN CHỈ
+                        CẦN NHẤC MÁY LÊN VÀ GỌI THEO SỐ 0837 857 277 MỌI VẤN ĐỀ
+                        CỦA…
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="https://cover-talk.zadn.vn/c/c/5/d/2/e2758f636b0cbe470b5319a7fdbb749d.jpg"
-                    />
+                  <a href="./src/máy_lạnh_6.html">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/tủ lạnh 1.jpg" />
 
-                    <h2 class="card-title">Sửa chập điện khẩn cấp</h2>
+                      <h2 class="card-title">Sửa chữa tủ đông tủ mát</h2>
 
-                    <p class="card-text">
-                      Chập điện là hiện tượng xảy ra khi có sự tiếp xúc giữa hai
-                      dây dẫn điện trong mạch điện, làm tăng đột ngột điện trở
-                      của dây dẫn. Kết quả của sự tiếp xúc này là dây dẫn phát
-                      ra lửa điện, gây hỏa hoạn và hủy hoại các thiết bị điện.
-                      Chập điện có thể xuất hiện trong cả dòng điện 1 chiều (DC)
-                      và nguồn điện xoay chiều (AC).
-                    </p>
-                  </div>
+                      <p class="card-text">
+                        Tuấn Đạt qua nhiều năm hoạt động đến nay chúng tôi luôn
+                        hướng tới chất lượng…
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -808,7 +822,7 @@
         </section>
       </div>
 
-      <div class="main_3">
+      <div id="info_more" class="main_3">
         <h3>Kỹ thuật điện nước hiện đại</h3>
 
         <h1>Các dịch vụ thường được yêu cầu</h1>
@@ -896,7 +910,9 @@
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-              <h1 style="text-align: center">Quy trình làm việc tại Tuấn Đạt</h1>
+              <h1 style="text-align: center">
+                Quy trình làm việc tại Tuấn Đạt
+              </h1>
             </div>
             <div class="col-md-3"></div>
           </div>
@@ -942,7 +958,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="main_6">
         <div class="container-fluid">
           <div class="row">
@@ -950,62 +966,52 @@
               <h1 id="ly_do">Lý do khách hàng nên chọn Tuấn Đạt</h1>
             </div>
           </div>
-  
+
           <div class="row">
             <div class="col-md-4">
               <form>
-                <h1>Thợ sửa điện chuyên dụng có chuyên môn cao</h1>
-  
+                <h1>Kinh nghiệm và Đảm bảo Chất lượng</h1>
+
                 <p>
-                  Lắp dựng, sửa chữa hệ thống điện công trường, gia đình, văn
-                  phòng hoặc các tòa nhà theo chỉ đạo của cấp trên – Cài đặt và
-                  duy trì hệ thống ánh sáng, điều khiển trong suốt quá trình xây
-                  dựng và duy trì hệ thống sau khi đã hoàn thành như thay thế các
-                  phần, vận dụng chiếu sáng, hệ thống điều khiển hoặc các phần
-                  khác của thiết bị điện. – Kiểm tra và bảo trì hệ thống điện theo
-                  định kỳ – Sửa hoặc thay thế các thiết bị, hoặc đồ đạc sử dụng
-                  dụng cụ cầm tay và dụng cụ điện.
+                  Tuấn Đạt có nhiều năm kinh nghiệm trong ngành điện nước, đảm
+                  bảo rằng các dự án được thực hiện bởi những chuyên gia có tay
+                  nghề cao. Điều này giúp bạn yên tâm rằng các công việc sẽ được
+                  hoàn thành với chất lượng tốt nhất và tuân thủ đúng tiêu chuẩn
+                  kỹ thuật.
                 </p>
               </form>
             </div>
-  
+
             <div class="col-md-4">
               <form>
-                <h1>Thợ sửa điện chuyên dụng có chuyên môn cao</h1>
-  
+                <h1>Dịch vụ Hỗ trợ và Bảo trì Tận Tâm</h1>
+
                 <p>
-                  Lắp dựng, sửa chữa hệ thống điện công trường, gia đình, văn
-                  phòng hoặc các tòa nhà theo chỉ đạo của cấp trên – Cài đặt và
-                  duy trì hệ thống ánh sáng, điều khiển trong suốt quá trình xây
-                  dựng và duy trì hệ thống sau khi đã hoàn thành như thay thế các
-                  phần, vận dụng chiếu sáng, hệ thống điều khiển hoặc các phần
-                  khác của thiết bị điện. – Kiểm tra và bảo trì hệ thống điện theo
-                  định kỳ – Sửa hoặc thay thế các thiết bị, hoặc đồ đạc sử dụng
-                  dụng cụ cầm tay và dụng cụ điện.
+                  Sau khi hoàn thành công việc, Tuấn Đạt cung cấp dịch vụ hỗ trợ
+                  và bảo trì định kỳ để đảm bảo hệ thống điện và nước của bạn
+                  hoạt động ổn định. Nếu có bất kỳ sự cố nào, bạn sẽ được hỗ trợ
+                  nhanh chóng và hiệu quả.
                 </p>
               </form>
             </div>
-  
+
             <div class="col-md-4">
               <form>
-                <h1>Thợ sửa điện chuyên dụng có chuyên môn cao</h1>
-  
+                <h1>Tư vấn và Giải pháp Tiết Kiệm</h1>
+
                 <p>
-                  Lắp dựng, sửa chữa hệ thống điện công trường, gia đình, văn
-                  phòng hoặc các tòa nhà theo chỉ đạo của cấp trên – Cài đặt và
-                  duy trì hệ thống ánh sáng, điều khiển trong suốt quá trình xây
-                  dựng và duy trì hệ thống sau khi đã hoàn thành như thay thế các
-                  phần, vận dụng chiếu sáng, hệ thống điều khiển hoặc các phần
-                  khác của thiết bị điện. – Kiểm tra và bảo trì hệ thống điện theo
-                  định kỳ – Sửa hoặc thay thế các thiết bị, hoặc đồ đạc sử dụng
-                  dụng cụ cầm tay và dụng cụ điện.
+                  Tuấn Đạt cung cấp dịch vụ tư vấn miễn phí để giúp bạn chọn lựa
+                  giải pháp tối ưu nhất cho hệ thống điện và nước của mình. Họ
+                  cũng có thể tư vấn về các công nghệ mới và giải pháp tiết kiệm
+                  năng lượng, giúp bạn tiết kiệm chi phí và nâng cao hiệu quả sử
+                  dụng.
                 </p>
               </form>
             </div>
           </div>
         </div>
       </div>
-  
+
       <div class="main_7">
         <div class="container">
           <div class="row">
@@ -1013,46 +1019,50 @@
               <div class="row">
                 <h1>| Khách hàng tiêu biểu</h1>
               </div>
-      
+
               <div class="row">
                 <div class="col-md-3">
-                  <img class="animated-image"
+                  <img
+                    class="animated-image"
                     src="https://fisthome.vn/wp-content/uploads/2022/08/no-image-news.jpg"
                   />
                 </div>
-      
+
                 <div class="col-md-3">
-                  <img class="animated-image"
+                  <img
+                    class="animated-image"
                     src="https://fisthome.vn/wp-content/uploads/2022/08/tai-xuong.jpg"
                   />
                 </div>
-      
+
                 <div class="col-md-3">
-                  <img class="animated-image"
+                  <img
+                    class="animated-image"
                     src="https://fisthome.vn/wp-content/uploads/2022/08/channels4_profile.jpg"
                   />
                 </div>
-      
+
                 <div class="col-md-3">
-                  <img class="animated-image"
+                  <img
+                    class="animated-image"
                     src="https://fisthome.vn/wp-content/uploads/2022/08/lazada.jpg"
                   />
                 </div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
     </div>
-   
 
     <!-- ----------------------------------------------------------------------- -->
 
+   
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img id="img_logo" src="img/logo mẫu của khỉ 2k.png">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -1060,7 +1070,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -1085,20 +1097,27 @@
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
-      <p>
-        Designed by Thanh Hau
-      </p>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
+
+
 
     <script src="./javascript/index.js"></script>
   </body>
-
-   
-  <!-- <script>
-    AOS.init();
-  </script> -->
 </html>

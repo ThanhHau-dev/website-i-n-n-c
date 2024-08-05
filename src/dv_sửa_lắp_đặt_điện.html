@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
-    <title>Sửa điện chập</title>
+    <title>Sửa chữa và lắp đặt</title>
   </head>
   <body>
     <header class="header">
@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,14 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
 
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- ---------------------------------------------------------------------- -->
 
     <main class="main">
@@ -74,16 +175,22 @@
             <h1>Sửa chữa, lắp đặt điện</h1>
 
             <p>
+              <p>
               Để sửa chữa, lắp đặt điện hay xử lý sự cố hoặc thay đổi vị trí, mở
               rộng phạm vi sử dụng điện, thiết bị điện là công việc không hề đơn
-              giản. Các công việc này dù nhỏ cũng yêu cầu cao về mặt an toàn mà
+              giản.</p>
+              <p>
+               Các công việc này dù nhỏ cũng yêu cầu cao về mặt an toàn mà
               chưa kể đến kiến thức chuyên môn và kinh nghiệm của người thợ điện
-              tại Sài Gòn. Vậy tại sao anh/chị không để việc khó khăn, mất thời
-              gian đó cho thợ điện chuyên nghiệp của Fisthome™ xử lý?
+            . </p>
+            <p>
+            Vậy tại sao anh/chị không để việc khó khăn, mất thời
+              gian đó cho thợ điện chuyên nghiệp của Tuấn Đạt xử lý?
+              </p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/lap-dat-dien.jpg"
+              src="../img/Dich-vu-sua-chua-dien-gia-re-uy-tin-tai-TP-Quy-Nhon.jpg"
             />
           </div>
         </div>
@@ -95,24 +202,35 @@
             </h1>
 
             <p>
+              <p>
               Sửa chữa và khắc phục các sự cố về chập cháy điện, cháy nổ ổ điện,
               thay thế dây điện âm tường, sửa chữa ổ cắm điện, tủ điện và các
-              thiết bị điện gia đình. Sửa chữa các thiết bị điện gia đình như:
+              thiết bị điện gia đình.</p>
+              <p> Sửa chữa các thiết bị điện gia đình như:</p>
+              <p>
               tủ điện, cầu dao, máy bơm nước, quạt trần, quạt cây, quạt treo
-              tường, tivi, hệ thống chiếu sáng. Sửa chữa lắp đặt, bảo dưỡng các
+              tường, tivi, hệ thống chiếu sáng.</p>
+              <p> Sửa chữa lắp đặt, bảo dưỡng các
               thiết bị điện lạnh: điều hòa/máy lạnh, tủ lạnh, máy giặt, lò vi
-              sóng, bình nóng lạnh, tủ đông, tủ kem. Thông nghẹt đường ống nước,
-              thông ống thoát nước thải, thông lavabo, thông chậu rửa chén,
-              thông bồn cầu triệt để. Sửa chữa ống nước bị nứt, bục gãy, ống
+              sóng, bình nóng lạnh, tủ đông, tủ kem.</p>
+              <p> Thông nghẹt đường ống nước,</p>
+              <p>
+              thông ống thoát nước thải, </p>
+              <p>thông lavabo, thông chậu rửa chén,
+              thông bồn cầu triệt để. </p>
+              <p>Sửa chữa ống nước bị nứt, bục gãy, ống
               nước bị rò rỉ âm tường, bể rò rỉ mất nước, đường ống nước bị nghẹt
-              cát, rong rêu gây mất nước, nước yếu. Sửa chữa, thay thế các thiết
-              bị nước: gãy vòi, hỏng van, xi phông, vòi sen, vòi chậu,… Lắp đặt
+              cát, rong rêu gây mất nước, nước yếu. </p>
+              <p>Sửa chữa, thay thế các thiết
+              bị nước: gãy vòi, hỏng van, xi phông, vòi sen, vòi chậu,… </p>
+              <p>Lắp đặt
               thiết bị vệ sinh: bồn cầu, chậu rửa, vòi nước phòng tắm, đường
               nước, hệ thống nước gia đình, hệ thống nước phòng tắm.
+              </p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/lap-dat-dien-dan-dung.jpg"
+              src="../img/8d01ab07b9881cd6459926.jpg"
             />
           </div>
         </div>
@@ -120,13 +238,16 @@
         <div class="row">
           <div class="col-md-12">
             <h1>
-              TẠI SAO LỰA CHỌN FISTHOME KHI CẦN SỬA CHỮA, LẮP ĐẶT ĐIỆN NƯỚC?
+              TẠI SAO LỰA CHỌN TUẤN ĐẠT KHI CẦN SỬA CHỮA, LẮP ĐẶT ĐIỆN NƯỚC?
             </h1>
             <p>
+              <p>
               Sửa điện dân dụng tại nhà vốn dĩ là công việc nguy hiểm, đặc biệt
-              là ở các điện áp dây trong nhà. Thợ sửa điện thiếu thận trọng có
-              thể dẫn đến bị điện giật nguy hiểm đến tính mạng hoặc hỏa hoạn. Vì
-              thế, fisthome yêu cầu đội thợ sửa điện tại nhà phải tiến hành công
+              là ở các điện áp dây trong nhà. </p>
+              <p>Thợ sửa điện thiếu thận trọng có
+              thể dẫn đến bị điện giật nguy hiểm đến tính mạng hoặc hỏa hoạn.</p>
+               Vì
+              thế, Tuấn Đạt yêu cầu đội thợ sửa điện tại nhà phải tiến hành công
               việc môt cách “thành thục và tuân thủ tối đa an toàn về điện”.
               Nghĩa là thợ điện phải được trang bị đầy đủ thiết bị an toàn và có
               chứng chỉ hành nghề điện và được đào tạo về kiến thức an toàn.
@@ -135,13 +256,17 @@
             <h3>Trình độ chuyên môn cao</h3>
 
             <p>
+              <p>
               Với tư cách là thợ sửa chữa hay lắp đặt trang thiết bị điện nguy
               hiểm, điều quan trọng là thợ sửa chữa điện tại nhà phải duy trì sự
               chú tâm đối với hệ thống điện trong nhà từ những thiết bị cơ bản
-              nhất. Nhờ các quy định nghiêm ngặt, tay nghề cao và kinh nghiệm
-              thực tiễn- thợ điện Fisthome™ sẽ xử lý công việc một cách an toàn
+              nhất.</p>
+              <p> Nhờ các quy định nghiêm ngặt, tay nghề cao và kinh nghiệm
+              thực tiễn- thợ điện Tuấn Đạt sẽ xử lý công việc một cách an toàn
               – luôn đặt trách nhiệm bảo đảm hệ thống điện cho gia đình bạn ở
               mức cao nhất.
+              </p>
+
             </p>
 
             <h3>An toàn và đảm bảo</h3>
@@ -151,7 +276,7 @@
               thì quý vị có thể hoàn toàn có thể tự làm. Nếu quý khách muốn tiết
               kiệm thời gian và đảm bảo an toàn điện trong nhà hoạt động tốt sau
               khi sửa chữa. Hãy nhấc máy lên gọi chúng tôi ngay lập tức,
-              fisthome đảm bảo sẽ không làm khách hàng thất vọng.
+              Tuấn Đạt đảm bảo sẽ không làm khách hàng thất vọng.
             </p>
           </div>
         </div>
@@ -159,12 +284,11 @@
     </main>
 
     <!-- ----------------------------------------------------------------------- -->
-
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -172,7 +296,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -181,7 +307,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -192,17 +318,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

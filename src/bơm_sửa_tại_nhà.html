@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,13 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -73,10 +175,11 @@
           <div class="col-md-12">
             <h1>
               Sửa máy bơm nước gia đình tại Hồ Chí Minh – Dịch vụ trọn gói giá
-              rẻ tại Fisthome
+              rẻ tại Tuấn Đạt
             </h1>
 
             <p>
+              
               Sửa máy bơm gia đình tại Hồ Chí Minh. Sửa máy bơm nước tại Hồ Chí
               Minh. Sửa máy bơm giếng khoan tại Hồ Chí Minh. Thay thế máy bơm
               nước cho gia đình. Lắp đặt trọn gói máy bơm nước giá dân. Cứu hộ
@@ -84,47 +187,49 @@
             </p>
 
             <p>
+              <p>
               Với dịch vụ sửa chữa uy tín và nhiều năm kinh nghiệm trong nghề
-              dịch vụ sửa chữa điện nước nên Fisthome tự hào là đơn vị có dịch
-              vụ tốt nhất hiện nay. Chỉ cần nhấc máy lên gọi 0902620338 chúng
-              tôi sẽ có mặt sau 15 phút. Luôn đi đầu trong lĩnh vực sửa điện
+              dịch vụ sửa chữa điện nước nên Tuấn Đạt tự hào là đơn vị có dịch
+              vụ tốt nhất hiện nay.</p><p> Chỉ cần nhấc máy lên gọi 0837 857 277 chúng
+              tôi sẽ có mặt sau 15 phút.</p><p> Luôn đi đầu trong lĩnh vực sửa điện
               nước, chúng tôi sở hữu trang thiết bị đầu tư hiện đại hiện đại và
-              nhân viên tay nghề cao, rành đường đi ngõ hẻm của từng khu vực tại
-              HCM. Chắc chắn sẽ là lựa chọn số 1 của khách hàng tìm đến khi có
+              nhân viên tay nghề cao, rành đường đi ngõ hẻm của từng khu vực.</p> Chắc chắn sẽ là lựa chọn số 1 của khách hàng tìm đến khi có
               các vấn đề hỏng hóc, sự cố về điện nước.
             </p>
 
-            <h1>Chế độ bảo hành và quy cách làm việc của Fisthome!</h1>
+            <h1>Chế độ bảo hành và quy cách làm việc của Tuấn Đạt!</h1>
 
             <p>
-              Với chế độ bảo hành công việc, sản phẩm nói chung : Bảo hành những
+              <p>
+              Với chế độ bảo hành công việc, sản phẩm nói chung :</p> Bảo hành những
               công việc đã làm( sửa máy bơm, thay thế máy bơm) từ 6 đến 12 tháng
-              tùy vào mức độ sử dụng và độ bền của thiết bị hay vật tư vv… Bảo
-              hành máy móc thiết bị do Fisthome cung cấp từ 9 tháng đến 24 tháng
+              tùy vào mức độ sử dụng và độ bền của thiết bị hay vật tư vv…</p><p> Bảo
+              hành máy móc thiết bị do Tuấn Đạt cung cấp từ 9 tháng đến 24 tháng
               tùy theo máy mới hay máy sửa chữa lại Khi phát sinh các sự cố khác
               trong quá trình bảo hành thì khách hàng được làm miễn phí hoặc với
-              giá rẻ nhất luôn có hậu mãi sau bán hàng
+              giá rẻ nhất luôn có hậu mãi sau bán hàng</p>
             </p>
 
             <img
-              src="https://fisthome.vn/wp-content/uploads/2022/09/z3678218888328_45bbf27fa22e67fd6a8287d88ef4c4cc-300x225.jpg"
+              src="../img/bơm 1.jpg"
             />
             <p>
+              <p>
               Đối với trách nhiệm cũng như công tác làm việc của nhân viên, thợ
-              tay nghề cao tại Fisthome : Hỗ trợ 24/7, có mặt nhanh sau 15 phút
+              tay nghề cao tại Tuấn Đạt :</p><p> Hỗ trợ 24/7, có mặt nhanh sau 15 phút
               gọi của khách hàng tại HCM. Luôn lắng nghe khách hàng, tìm hiểu và
-              chắc chắn về các lỗi về máy bơm. Không phát sinh các chi phí phụ
+              chắc chắn về các lỗi về máy bơm.</p><p> Không phát sinh các chi phí phụ
               khi đã tìm ra nguyên nhân gây hỏng máy bơm. Tư vấn cho khách hàng
               các cách tiết kiệm chi phí và đảm bảo an toàn hiệu quả khi sử
-              dụng. Thường xuyên gọi kiểm tra về hiện trang máy bơm sau khi sửa
+              dụng.</p><p> Thường xuyên gọi kiểm tra về hiện trang máy bơm sau khi sửa
               chữa. Ngoài các dịch vụ liên quan đến thay mới, sửa chữa máy bơm
-              Fisthome còn là công ty chuyên sửa điện nước. Tại Fisthome quý
+              Tuấn Đạt còn là công ty chuyên sửa điện nước. Tại Tuấn Đạt quý
               khách sẽ được trải nghiệm các dịch vụ sửa chữa giá tốt như: Sửa
               chữa các thiết bị điện dân dụng. Cứu hộ trong các trường hợp cháy
-              điện, chập điện,… Sửa chữa các thiết bị sử dụng trong nhà tắm,
-              công trình phụ. Sửa chữa, thông nghẹt đường ống nước. Sửa nhà,
-              nâng cấp cải tạo nhà cũ, tập thể cũ. Mọi thắc mắc liên quan đến
-              sản phẩm, dịch vụ của Fisthome vui lòng liên hệ ngay với chúng tôi
+              điện, chập điện,…</p><p> Sửa chữa các thiết bị sử dụng trong nhà tắm,
+              công trình phụ.</p><p> Sửa chữa, thông nghẹt đường ống nước. Sửa nhà,
+              nâng cấp cải tạo nhà cũ, tập thể cũ.</p> Mọi thắc mắc liên quan đến
+              sản phẩm, dịch vụ của Tuấn Đạt vui lòng liên hệ ngay với chúng tôi
               qua số hotline để được giải đáp hoàn toàn miễn phí 24/7.
             </p>
 
@@ -142,7 +247,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -150,7 +255,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -159,7 +266,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -170,17 +277,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>

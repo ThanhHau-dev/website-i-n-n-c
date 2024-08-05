@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Sửa bồn cầu bị tắc tại nhà – Sửa bồn cầu bị nghẹt giá rẻ</h1>
+
+            <img
+              src="../img/thông nghẹt 1.jpg"
+              alt="hình"
+            />
+
+            <h1>Nguyên nhân khiến bồn cầu bị tắc</h1>
+
+            <p>
+              <p>
+              Để có thể tìm ra cách thông bồn cầu bị tắc nặng một cách hiệu quả
+              nhanh chóng, thì điều đầu tiên ta cần thực hiện chính là tìm ra
+              các nguyên nhân chính dẫn đến tình trạng trên.</p>
+              <p> Chỉ có như vậy, ta
+              mới có thể đưa ra những biện pháp thích hợp để xử lý vấn đề, thoát
+              khỏi cảnh tắc nước bồn cầu khó chịu này.</p><p> Tắc nghẽn bồn cầu do lắp
+              đặt bồn cầu – thay bồn cầu không hoàn chỉnh, việc thiết kế hệ
+              thống xả thải chưa hợp lý với hình dạng gồ ghề, uốn khúc khiến các
+              loại chất thải dễ dàng bị kẹt lại cũng có thể bồn cầu không xả
+              được nước.</p><p> Cặn xà phòng và dầu mỡ cũng là những nguyên nhân chính
+              khiến bồn cầu bị tắc nghẽn và ngập nước nữa đấy.</p> Khi nóng thường
+              hóa lỏng, như khi mát lại đông đặc là đặc điểm chính của các loại
+              chất béo hữu cơ, điều đó khiến chúng khó để có thể bám vào thành
+              ống xả, cứ tích tụ lâu dần sẽ tạo thành các lớp mỡ bịt kín toàn bộ
+              ống thoát, điều đó khiến việc thông tắc bồn cầu bị nghẹt gặp nhiều
+              khó khăn hơn.
+            </p>
+
+            <h1>Sửa bồn cầu nghẹt nước do tắc nghẽn bồn cầu</h1>
+
+            <p>
+              <p>Tình trạng thường dễ gặp nhất hiện nay mà ai cũng sẽ phải gặp,
+              trong quá trình sử dụng mọi người thường sử dụng giấy vệ sinh quá
+              nhiều, đôi khi là đồ ăn thừa hoặc cả tóc vào bồn cầu…</p>
+              <p> Lâu dần,
+              lượng rác thải quá lớn sẽ khiến dòng lưu thông của nước và chất
+              thải bị ảnh hưởng.</p><p> Việc sửa bồn cầu tại nhà nếu có dụng cụ hỗ trợ
+              và cẩn thận một chút thì quý vị có thể hoàn toàn có thể tự làm.</p>
+              Nếu quý khách muốn tiết kiệm thời gian và đảm bảo bồn cầu trong
+              nhà hoạt động tốt sau khi sửa chữa. Hãy nhấc máy lên gọi chúng tôi
+              ngay lập tức, Tuấn Đạt đảm bảo sẽ không làm khách hàng thất vọng.
+            </p>
+
+            <h1>
+                Chi tiết dịch vụ sửa bồn cầu của Tuấn Đạt bao gồm:
+            </h1>
+
+            <p>
+              <p>
+                Sửa bồn cầu tất cả các hãng: TOTO, INNAX, THIÊN THANH, VILAGCENZA, CAESAR, AMERICAN, STANDARD, KOHLER, SELTA, GROHE, COTTO</p>
+                <p>
+                Sửa bồn cầu bị tắc bị nghẹt</p>
+                <p>
+                Sửa bồn cầu bị rò rỉ nước</p>
+                <p>
+                Thay thế các các thiết bị bên trong như cột cấp nước ốc cột xả nước</p>
+                <p>
+                Thay dây dẫn nước</p><p>
+                Bán cung cấp bồn cầu mới hàng chính hãng công ty có bảo hành</p><p>
+                Xử lý mùi hôi bốc ra từ bồn vệ sinh</p><p>
+                Nhận lắp đặt đường ống thông hơi cho bồn cầu</p><p>
+                Thông tắc bồn cầu, hút bể phốt</p><p>
+                Sửa chữa tiểu nam thay thế thế linh kiện thiết bị cho tiểu nam</p>
+            </p>
+
+            <h1>
+                Ngoài việc nhận sửa chữa bồn cầu, còn có các dịch vụ khác như:
+            </h1>
+
+            <p>
+                Thông tắc chậu rửa bát
+                Sửa chữa điện nước
+                Sửa chữa đường ống nước
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

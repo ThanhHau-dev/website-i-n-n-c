@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Dịch vụ sửa chữa tủ mát uy tín</h1>
+
+            <p>
+              <p>Qua nhiều năm hoạt động đến nay chúng tôi luôn hướng tới chất lượng phục vụ cao.</p>
+              <p>Đội ngũ kỹ thuật của công ty là những người thợ giỏi, có chuyên môn và kinh nghiệm luôn đáp ứng được nhu cầu của quý khách nhanh nhất có thể khi cần sửa chữa tủ đông, tủ mát.</p>
+              
+            </p>
+
+            <img
+              src="../img/tủ lạnh 2.jpg"
+              alt="hình"
+            />
+
+            <h1>Dịch vụ sửa tủ mát</h1>
+
+            <p>
+              <p>Sửa tủ lạnh tại nhà HCM chuyên nghiệp, nhanh chóng, uy tín, bảo hành dài hạn.</p>
+              <p>Với đội ngũ kỹ thuật viên nhiều năm kinh nghiệm cùng đội ngũ kỹ sư chuyên ngành sửa chữa điện lạnh, điện dân dụng, điện công nghiệp chuyên sửa tủ lạnh giỏi.</p>
+              <p>Fisthome sửa chữa tất cả các loại tủ lạnh, tủ đông, tủ mát, cây nước nóng lạnh, sửa chữa tủ lạnh của nhiều hãng trên thị trường.</p>
+              <p>Chúng tôi phục vụ tân nơi ở tất cả quận huyện của Hà Nội không ngại đi xa giá cả hợp lý phù hợp với túi tiền.</p>
+              <p>Chính vì điều đó mà nhiều năm qua chúng tôi được nhiều khách hàng đánh giá cao về chất lượng dịch vụ sửa chữa tủ đông, tủ mát tại nhà với sự ân tình chu đáo.</p>
+              
+            </p>
+
+            <h1>
+              Sửa tủ mát giá rẻ tại HCM đảm bảo tiết kiệm tối đa chi phí cho
+              khách hàng
+            </h1>
+
+            <p>
+              <p>Để tiết kiệm tối đa thời gian và chi phí của khách hàng, thợ của công ty là những người nhiệt tình, nhiều kinh nghiệm sửa chữa các bệnh của tủ mát hay gặp như:</p>
+              <p>Sửa tủ mát không lạnh,</p>
+              <p>Sửa tủ đông không lạnh,</p>
+              <p>Sửa tủ mát kém lạnh,</p>
+              <p>Sửa tủ mát kém lạnh phía dưới,</p>
+              <p>Sửa tủ mát không chạy,</p>
+              <p>Sửa tủ mát giá rẻ tại HCM.</p>
+              
+            </p>
+
+            <img
+              src="../img/tủ lạnh 3.jpg"
+              alt="hình"
+            />
+
+            <h3>Những sự cố tủ lạnh thường gặp</h3>
+
+            <p>
+              <p>Tủ lạnh bị dò rỉ gas,</p>
+              <p>Độ lạnh của tủ kém,</p>
+              <p>Tủ lạnh thiếu gas, hết gas,</p>
+              <p>Tủ lạnh bị tắc ẩm, có mùi hôi,</p>
+              <p>Dàn lạnh của tủ bị bám tuyết nhiều,</p>
+              <p>Tủ lạnh hỏng block,</p>
+              <p>Vỏ tủ không kín hoặc cửa tủ bị kênh,</p>
+              <p>Tủ lạnh bị chảy nước, rò nước,</p>
+              <p>Tủ lạnh bị đóng tuyết ngăn mát,</p>
+              <p>Tủ lạnh không đóng đá được,</p>
+              <p>Tủ lạnh chạy ồn, kêu to, phát ra tiếng kêu lạ,</p>
+              <p>Tủ lạnh có mùi hôi.</p>
+              <p>Nếu tủ lạnh, tủ mát của gia đình bạn gặp phải các trường hợp trên, hãy liên hệ ngay với Fisthome để được tư vấn và sửa chữa kịp thời.</p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

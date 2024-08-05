@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              Sửa block máy lạnh, máy nén, dàn nóng, dàn lạnh, Board điều khiển
+            </h1>
+
+            <hr />
+
+            <h1>Dịch vụ sửa chữa máy lạnh tại nhà chuyên nghiệp</h1>
+
+            <p>
+              <p>Sửa chữa Điện Nước Tuấn Đạt xin giới thiệu dịch vụ Sửa block máy lạnh, máy nén, dàn nóng, dàn lạnh, Board điều khiển tại nhà chuyên nghiệp của chúng tôi.</p>
+<p>Sửa máy lạnh giá rẻ tận nhà với nhiều năm kinh nghiệm và đội ngũ nhân viên kỹ thuật xuất sắc, chúng tôi đã phát triển hệ thống rộng rãi khắp nơi tại TPHCM và các khu vực lân cận.</p>
+
+            </p>
+
+            <img
+              src="../img/main máy lạnh 2.jpg"
+              alt="hình"
+            />
+
+            <h3>
+              Dấu hiệu khi máy lạnh, điều hòa cần thay hoặc sửa block máy lạnh,
+              máy nén, dàn nóng, dàn lạnh, Board điều khiển
+            </h3>
+
+            <p>
+              <p>Máy lạnh không hoạt động được.</p>
+<p>Máy lạnh quá lạnh hoặc quá nóng so với ngày thường.</p>
+<p>Trong lúc hoạt động máy phát ra tiếng ồn lớn.</p>
+<p>Máy hoạt động nhưng không thấy hơi lạnh.</p>
+<p>Quạt ở cục nóng máy lạnh không quay.</p>
+<p>Quạt ở cục lạnh máy lạnh không quay.</p>
+<p>Ở dàn lạnh máy lạnh bị chảy nước, rò rỉ nước.</p>
+<p>Ống dẫn gas có vấn đề.</p>
+<p>Board máy lạnh bị hư.</p>
+<p>Block máy lạnh không hoạt động do bị hư hại.</p>
+<p>Trên đây là những dấu hiệu cho thấy máy lạnh chúng ta đang gặp vấn đề, việc cần làm lúc này là liên hệ ngay với Tuấn Đạt – Dịch vụ sửa chữa máy lạnh giá rẻ tận nhà để được tư vấn và sắp xếp lịch sửa chữa máy lạnh ngay nhé.</p>
+<p>Để đảm bảo tính chuyên nghiệp và sự rõ ràng, quá trình sửa chữa máy lạnh của Tuấn Đạt được thực hiện theo quy trình sau:</p>
+<p>– Kiểm tra máy lạnh/điều hòa: bao gồm dàn nóng và dàn lạnh để xác định hư hỏng ở bộ phận nào.</p>
+<p>– Đánh giá mức độ hư hỏng của máy lạnh và báo cáo với khách tình trạng cũng như chi phí.</p>
+<p>– Tiến hành sửa chữa máy lạnh theo thỏa thuận với khách hàng.</p>
+<p>– Bàn giao và lắp máy lạnh như ban đầu, bơm vệ sinh máy lạnh sạch sẽ bên ngoài của máy lạnh.</p>
+<p>– Kiểm tra lại chất lượng của máy lạnh sau khi sửa chữa, dán tem bảo hành của Tuấn Đạt.</p>
+<p>Lưu ý: Đối với những trường hợp không thể tiến hành sửa chữa tại nhà, Tuấn Đạt bắt buộc phải mang về xưởng sửa chữa thì sẽ có biên nhận và đảm bảo thời gian trả máy đúng hẹn cho khách hàng.</p>
+
+            </p>
+
+            <h3>Thay, sửa Block máy lạnh</h3>
+
+            <p>
+              <p>Máy block lạnh còn được gọi là máy nén được lắp đặt ở dàn nóng máy lạnh với chức năng tạo ra sự luân chuyển liên tục của gas lạnh dẫn vào ống dẫn từ dàn lạnh đến dàn nóng và ngược lại, để nén áp suất.</p>
+              <p>Hiện nay trên thị trường có 3 loại block: Block dạng Piston, Block dạng Swing và Block dạng xoắn ốc.</p>
+              <p>tay-block-may-lanh</p>
+              
+            </p>
+
+            <img
+              src="../img/main máy lạnh 3.jpg"
+              alt="hình"
+            />
+
+            <h1>Dấu hiệu nhận biết cần phải thay, sửa block máy lạnh</h1>
+
+            <p>
+              <p>Chúng ta cần phải thay block máy lạnh/ điều hòa khi phát hiện những dấu hiệu sau:</p>
+              <p>Block máy lạnh thường xuyên bị nóng hơn và thất thường.</p>
+              <p>Trong dàn nóng máy lạnh có phát ra âm thanh lạ hoặc tiếng kêu báo động.</p>
+              <p>Ở phần lạnh của máy lạnh bị rò rỉ nước ra sàn, phun nước và bám tuyết.</p>
+              <p>Máy lạnh được mở bình thường nhưng không lạnh hoặc lạnh lâu.</p>
+              
+            </p>
+
+            <h1>Thay máy nén điều hòa, máy lạnh tại nhà giá rẻ</h1>
+
+            <p>
+              <p>Máy nén điều hoà – Block điều hoà, lốc điều hoà là thiết bị trung gian giữa dàn hơi và dàn lạnh, đây là bộ phận chuyển đổi chất làm mát áp suất thấp từ dàn hơi thành khí lạnh áp suất cao, nóng khi di chuyển vào dàn lạnh.</p>
+              <p>Máy nén được coi như trái tim của hệ thống làm lạnh điều hòa, đảm bảo quá trình làm lạnh của cả hệ thống.</p>
+              
+            </p>
+
+            <img
+              src="../img/main máy lạnh 4.png"
+              alt="hình"
+            />
+
+            <h3>Công dụng của máy nén</h3>
+
+            <p>
+              <p>Máy nén điều hòa chính là bộ phận tạo ra sự luân chuyển liên tục của môi chất lạnh trong hệ thống đường ống dẫn từ dàn lạnh tới dàn nóng và ngược lại.</p>
+              <p>– Hút liên tục môi chất trong dàn lạnh để nén đến áp suất cao chuyển thành dạng lỏng ở dàn nóng, quá trình biến đổi từ dạng khí sang dạng lỏng sẽ sinh nhiệt nên môi chất lỏng có nhiệt độ rất cao, lên tới gần 100 độ C.</p>
+              <p>Chính vì vậy khi các bạn đứng trước cục nóng của điều hòa đang chạy liên tục sẽ thấy gió ra từ dàn nóng rất nóng và khô.</p>
+              <p>– Tạo ra sự luân chuyển liên tục của môi chất trong đường ống để quá trình thu nhiệt tại dàn lạnh và xả nhiệt tại dàn nóng được thực hiện liên tục khi chưa đạt nhiệt độ yêu cầu trong phòng.</p>
+              
+            </p>
+
+            <img
+              src="../img/main máy lạnh.jpg"
+              alt="hình"
+            />
+
+            <h1>Sửa Board mạch máy lạnh uy tín tại nhà</h1>
+
+            <h3>Board mạch máy lạnh là gì?</h3>
+
+            <p>
+              <p>Board mạch máy lạnh là một bản mạch điện tử đóng vai trò quan trọng trong việc kết nối, gắn kết các linh kiện, làm nhiệm vụ giao tiếp giữa các linh kiện bên trong máy lạnh với nhau.</p>
+              <p>Board mạch là nơi tập trung các linh kiện, vi mạch phức tạp nhất của máy lạnh.</p>
+              <p>Các nút bấm điều khiển hoạt động của máy lạnh cũng thường nằm trên board mạch hoặc trên board mạch sẽ có bộ phận mắt thần để tiếp nhận các thao tác trên remote để máy lạnh hoạt động theo đúng quy trình.</p>
+              <p>Vì thế board mạch máy lạnh được coi là trung tâm điều khiển mọi hoạt động của máy lạnh và được coi là não bộ của thiết bị.</p>
+              <p>Các dòng máy lạnh thông thường (mono), board mạch thường được lắp đặt trong dàn lạnh, giữ vai trò điều khiển mọi hoạt động của máy lạnh.</p>
+              <p>Đối với các dòng máy lạnh sử dụng công nghệ Inverter và các máy lạnh đời mới hiện nay thì board mạch hoạt động phức tạp hơn so với các dòng máy lạnh thông thường, nó được lập trình để điều khiển nhiều chức năng thông minh hơn.</p>
+              <p>Máy lạnh Inverter sẽ có 2 board mạch là board mạch đầu được lắp đặt trên dàn lạnh và board mạch đuôi được lắp trên dàn nóng.</p>
+              
+            </p>
+
+            <img
+              src="../img/block máy lạnh 6.webp"
+              alt="hình"
+            />
+
+            <h3>Dấu hiệu nhận biết máy lạnh bị hư board mạch</h3>
+
+            <p>
+              <p>Bạn có thể dễ dàng nhận biết được tình trạng máy lạnh bị hư board mạch thông qua các dấu hiệu nhận biết sau:</p>
+              <p>Khi máy lạnh bị hư board mạch các đèn hiển thị trên dàn lạnh sẽ chớp nháy liên tục và máy lạnh không hoạt động.</p>
+              <p>Dàn lạnh không hoạt động, máy lạnh không nhận điều khiển từ remote.</p>
+              <p>Đèn hiển thị trên đầu lạnh không báo đúng với chương trình hiển thị trên remote.</p>
+              <p>Nhiệt độ hiển thị trên máy lạnh không đúng với nhiệt độ thực tế.</p>
+              <p>Máy lạnh sau khi khởi động lên chỉ hoạt động được trong một khoảng thời gian ngắn rồi tự tắt.</p>
+              <p>Dàn lạnh bật lên rồi tự tắt sau đó lại hoạt động bình thường.</p>
+              <p>Máy lạnh chạy khoảng 5 phút, 10 phút hay 30 phút rồi lại tự tắt.</p>
+              <p>Sử dụng remote để tắt máy lạnh nhưng máy vẫn hoạt động, không tắt hẳn.</p>
+              <p>Máy lạnh chạy quá lạnh hoặc quá nóng không đúng với nhiệt độ hiển thị trên remote.</p>
+              <p>Máy lạnh báo các mã lỗi lên điều khiển máy lạnh.</p>
+              <p>Máy lạnh không có nguồn điện vào, board mạch bị mất nguồn.</p>
+              
+            </p>
+
+            <h3>Nguyên nhân máy lạnh bị hư board mạch</h3>
+
+            <p>
+              <p>Có rất nhiều nguyên nhân dẫn đến tình trạng máy lạnh bị hư board mạch, dưới đây là những nguyên nhân phổ biến dẫn đến hư board mạch máy lạnh.</p>
+              <p>Cùng tìm hiểu để biết cách hạn chế lỗi board mạch trên máy lạnh nhé!</p>
+              
+            </p>
+
+            <h3>Lắp đặt máy lạnh không đúng cách</h3>
+
+            <p>
+              <p>Để máy lạnh hoạt động tốt bạn cần lắp đặt máy lạnh ở những nơi khô ráo, thoáng mát, tránh ánh sáng trực tiếp hay mưa tạt vào.</p>
+              <p>Nếu bạn lắp đặt máy lạnh không đúng cách, lắp máy lạnh ở những nơi ẩm thấp, có nước mưa tạt vào sẽ khiến board mạch của máy lạnh dễ dàng bị hỏng.</p>
+              <p>Việc bảo dưỡng, vệ sinh máy lạnh tại nhà định kỳ thường xuyên sẽ giúp máy lạnh hoạt động hiệu quả hơn và giúp tăng cường tuổi thọ cho máy lạnh, tránh được những hư hỏng cho máy lạnh trong đó có lỗi hư board mạch.</p>
+              <p>Nếu bạn không thực hiện vệ sinh máy lạnh định kỳ sẽ tạo điều kiện cho côn trùng, vi khuẩn và bụi bẩn bám vào board mạch gây hỏng board mạch.</p>
+              
+            </p>
+
+            <h3>Nguồn điện chập chờn, không ổn định</h3>
+
+            <p>
+              <p>Trong quá trình vận hành máy lạnh, nguồn điện chập chờn, không ổn định dễ dàng làm chập cháy hay đứt các vi mạch điện tử dẫn đến hiện tượng máy lạnh bị hư board mạch.</p>
+<p>Vì thế để máy lạnh hoạt động tốt, hạn chế hư board mạch đòi hỏi phải cung cấp cho máy lạnh nguồn điện ổn định.</p>
+
+            </p>
+
+            <h3>Sử dụng máy lạnh không đúng cách</h3>
+
+            <p>
+              <p>Việc để máy lạnh chạy quá tải trong thời gian dài, sử dụng máy lạnh 24/24, điều chỉnh nhiệt độ quá thấp so với nhiệt độ của môi trường hay thay đổi cài đặt máy lạnh liên tục cũng là những nguyên nhân làm cho máy lạnh bị hư hỏng board mạch một cách nhanh chóng.</p>
+              <p>Trên đây dịch vụ sửa board máy lạnh – Tuấn Đạt đã trình bày chi tiết về board mạch máy lạnh là gì, các dấu hiệu nhận biết và nguyên nhân máy lạnh bị hư board mạch.</p>
+              <p>Hy vọng qua những thông tin này các bạn sẽ biết cách sử dụng máy lạnh hiệu quả hơn.</p>
+              
+            </p>
+
+            <img
+              src="../img/main máy lạnh 3.jpg"
+              alt="hình"
+            />
+
+            <h1>CÁC DỊCH VỤ SỬ ĐIỀU HÒA UY TÍN TẠI Tuấn Đạt</h1>
+
+            <p>
+              <p>Sửa block máy lạnh</p>
+              <p>Sửa hoặc thay máy nén điều hòa</p>
+              <p>Sửa hoặc thay dàn nóng điều hòa</p>
+              <p>Sửa hoặc thay dàn lạnh điều hòa</p>
+              <p>Board điều khiển máy lạnh</p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></script>
+  </body>
+</html>

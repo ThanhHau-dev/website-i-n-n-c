@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/dv_sửa_điện_chập.css" />
+    <title>Sửa điện chập</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header_1">
+          <div class="container-fluid text-center">
+            <div class="header_1_menu">
+              <div class="row align-self-center mt-5">
+                <div class="col-md-4">
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
+                </div>
+
+                <div class="col-md-5 justify-content-end">
+                  <nav class="navbar">
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
+                  </nav>
+
+                  <br />
+
+                  <h3 style="text-align: center">
+                    Dịch vụ sửa chữa điện nước tại nhà !
+                  </h3>
+                </div>
+
+                <div class="col-md-3">
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="header_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              Dịch vụ sửa máy lạnh tại nhà, sửa điều hòa uy tín
+            </h1>
+
+            <p>
+              Tuấn Đạt là đơn vị uy tín, chất lượng chuyên thiết kế, lắp đặt,
+              sửa chữa, vệ sinh máy lạnh/điều hòa.<p> Các dịch vụ bảo trì và bảo
+              hành uy tín cho tất cả các thiết bị điện dân dụng như máy lạnh,
+              bình nóng lạnh, điều hòa,… mà Tuấn Đạt cung cấp.</p><p> Với chỉ tiêu, quy
+              trình làm việc rõ ràng, đội ngũ nhân viên chuyên nghiệp, đảm bảo
+              an toàn trong lao động.</p> Tuấn Đạt cam kết sẽ mang đến cho khách
+              hàng những sản phẩm, dịch vụ chất lượng và giá thành hợp lý nhất.
+            </p>
+
+            <img
+              src="../img/máy lạnh 1.webp"
+              alt="hình"
+            />
+
+            <p>
+              Với đội ngũ thợ sửa máy lạnh chuyên nghiệp, sửa máy lạnh
+              uy tín với số lượng lớn
+            </p>
+
+            <h1>Các dịch vụ sửa chữa máy lạnh uy tín tại Tuấn Đạt</h1>
+
+            <p>
+              Đa số người dùng máy lạnh thường xuyên ít khi nghĩ với việc sử
+              dụng như thế nào, hay cân nhắc cách sửa máy lạnh ra sao để máy
+              hoạt động tốt, bền lâu.<p> Chính điều đó làm cho chiếc máy lạnh nhà
+              bạn thỉnh thoảng mắc phải một số hư hỏng có thể liệt kê như sau:
+              Sửa máy lạnh bị thiếu gas, hết gas.</p><p> Sửa máy lạnh không chạy do
+              Block không chạy.</p><p> Sửa máy nén (block máy lạnh) chạy ồn.</p><p> Sửa máy
+              điều hòa chạy liên tục nhưng không phát ra không khí lạnh.</p><p> Sửa áp
+              suất hút của điều hòa không ổn định.</p><p> Sửa block chạy và dừng liên
+              tục do điều hòa hoạt động quá tải…</p><p> Sửa hơi lạnh có mùi hôi ở điều
+              hòa.</p><p> Sửa máy lạnh bị chập điện, gây nhảy CB, sập Aptomat</p><p> Sửa máy
+              lạnh chảy nước ở dàn lạnh Sửa máy lạnh chảy nước ở dàn nóng</p><p> Sửa
+              máy lạnh chảy nước ở đường ống nước thải Sửa máy lạnh báo lỗi ở
+              dàn điều khiển (như máy lạnh bị lỗi E0, E3, E6 ở máy lạnh Daikin…)</p>
+              Sửa máy lạnh chạy rồi ngưng liên tục Sửa Remote điều hòa không
+              điều khiển được máy dù màn hình remote cho thấy vẫn đang hoạt
+              động.
+            </p>
+
+            <img
+              src="../img/máy lạnh 3.webp"
+              alt="hình"
+            />
+
+            <h1>Những dấu hiệu khiến bạn nên sửa máy lạnh ngay lập tức</h1>
+
+            <p>
+              <p>
+              Nếu máy lạnh của bạn đang gặp những vấn đề bất thường, bạn nên
+              kiểm tra xem có mắc phải những hiện tượng dưới đây không!</p><p> Những
+              lỗi hư hỏng này có thể xảy ra một cách rõ ràng giúp bạn lập tức
+              nhận biết được ngay, nhưng có một số lỗi lại tiềm ẩn bên trong nên
+              việc bảo trì, vệ sinh máy lạnh mỗi tháng là rất cần thiết để đảm
+              bảo máy lạnh luôn trong tình trạng tốt nhất.</p> Lúc này hãy tìm đơn
+              vị sửa máy lạnh tại nhà uy tín lâu năm.
+            </p>
+
+            <h3>Một số biểu hiện rõ ràng:</h3>
+
+            <p>
+              <p>
+              Máy lạnh kêu to, ù khi chạy, có tiếng ồn lớn như bị rè, kêu rặc
+              rặc Cục lạnh (đàn lạnh) kêu to, giây ra tiếng ồn.</p> Cục nóng (dàn
+              nóng) phát ra tiếng ồn.<p> Nên sửa máy lạnh khi không lạnh dù đã điều
+              chỉnh đúng chế độ Máy lạnh không hoạt động bất kì chức năng gì.</p>
+              <p>
+              Cục nóng không hoạt động, không quạt. Cục lạnh không hoạt động.
+              Máy điều hòa bị xì gas.<p><p> Máy điều hòa không nhận tín hiệu điều
+              khiển, báo lỗi bo mạch.</p> Block điều hòa không hoạt động Sửa điều
+              hòa quá lạnh so với nhiệt độ điều chỉnh Máy không chảy nước ra ống
+              dẫn nước. Máy lạnh rỉ nước trực tiếp. Máy lạnh không lạnh, kém
+              lạnh
+            </p>
+
+            <img
+              src="../img/máy lạnh 2.jpeg"
+              alt="hình"
+            />
+
+            <h3>
+              Ngoài ra một số nguyên nhân khiến máy lạnh bị
+              hư như:
+            </h3>
+
+            <p>
+              Máy lạnh xì giàn Máy lạnh thiếu gas, mục đồng Máy nén không chạy,
+              quạt chạy Máy chạy liên tục nhưng không lạnh Áp suất hút thấp Áp
+              suất hút cao Máy lạnh xì gas do lắp đầu mới không đúng kỹ thuật
+              Bạn đã từng bắt gặp những dấu hiệu nào bên dưới đối với máy lạnh
+              của mình? Những lỗi hư hỏng này có thể xảy ra một cách rõ ràng
+              giúp bạn lập tức nhận biết được ngay, nhưng có một số lỗi lại tiềm
+              ẩn bên trong nên việc bảo trì, vệ sinh máy lạnh mỗi tháng là rất
+              cần thiết để đảm bảo máy lạnh luôn trong tình trạng tốt nhất.
+            </p>
+
+            <h1>Nguyên nhân làm máy lạnh giảm tuổi thọ nhanh</h1>
+
+            <p>
+              <p>Bật tắt máy lạnh liên tục: Nhiều người cho rằng tắt điều hòa khi đã đủ lạnh và chỉ bật khi nóng sẽ giúp tiết kiệm điện năng, nhưng thực tế việc này lại khiến hoá đơn tiền điện tăng chóng mặt và làm điều hoà nhanh hỏng hơn.</p>
+              <p>Bởi bật/tắt điều hoà liên tục sẽ làm máy nén, động cơ quạt phải khởi động lại nhiều lần và làm lạnh đến nhiệt độ cài đặt khi mà nhiệt độ phòng đã tăng lên.</p>
+              <p>Điều này đồng nghĩa với việc sẽ làm tiêu tốn một lượng điện năng lớn gấp 3 lần mức năng lượng cần để duy trì độ lạnh của phòng.</p>
+              <p>Bật máy lạnh ở nhiệt độ quá thấp: Khi trời nắng nóng, nhiều người luôn mong muốn căn phòng sẽ nhanh chóng mát lạnh nên sẽ bật nhiệt độ rất thấp.</p>
+              <p>Tuy nhiên, cách làm này làm điều hòa sử dụng hết công suất khiến máy nhanh hỏng hơn, tốn tiền điện hơn.</p>
+              <p>Mở máy điều hòa 24/24: Mùa hè oi bức khiến nhiều người thường có thói quen mở máy điều hòa suốt ngày đêm.</p>
+              <p>Nhưng cách này không chỉ gây lãng phí điện, mà còn gây hại đến sức khỏe.</p>
+              <p>Lắp đặt điều hòa không đúng chỗ: Nhiều người tin rằng lắp đặt máy lạnh ở khu vực nóng nhất phòng, thậm chí là trong góc tường sẽ giúp nhanh chóng giảm nhiệt và tạo không khí thoáng mát cho căn phòng.</p>
+              <p>Nhưng quan niệm này là hoàn toàn sai lầm bởi sẽ khiến điều hòa vận hành quá tải và chạy tốn điện hơn bình thường.</p>
+              <p>Không bảo trì, vệ sinh máy thường xuyên: Nếu trong thời gian dài sử dụng, chắc chắn sẽ khiến điều hòa nhanh bị bám bụi, hỏng hóc và tốn điện hơn.</p>
+              <p>Vệ sinh máy lạnh không chỉ mang lại nguồn không khí thoáng mát, sạch sẽ mà còn giúp bạn giữ và tăng tuổi thọ của máy hơn.</p>
+              <p>Bạn nghĩ rằng thuê dịch vụ sửa máy lạnh, vệ sinh máy lạnh tốn nhiều chi phí và không cần thiết nhưng bạn hãy nghĩ đến tác dụng và tác hại của nó khi không được vệ sinh đúng cách.</p>
+              <p>Lúc đó máy sẽ hư tổn nặng và chi phí tốn gấp nhiều lần.</p>
+            </p>
+
+            <h1>Cách sử dụng và tự bảo dưỡng máy lạnh hạn chế bị hư hỏng</h1>
+
+            <p>
+              <p>Bật tắt máy lạnh liên tục: Nhiều người cho rằng tắt điều hòa khi đã đủ lạnh và chỉ bật khi nóng sẽ giúp tiết kiệm điện năng, nhưng thực tế việc này lại khiến hoá đơn tiền điện tăng chóng mặt và làm điều hoà nhanh hỏng hơn.</p>
+            <p>Bởi bật/tắt điều hoà liên tục sẽ làm máy nén, động cơ quạt phải khởi động lại nhiều lần và làm lạnh đến nhiệt độ cài đặt khi mà nhiệt độ phòng đã tăng lên.</p>
+            <p>Điều này đồng nghĩa với việc sẽ làm tiêu tốn một lượng điện năng lớn gấp 3 lần mức năng lượng cần để duy trì độ lạnh của phòng.</p>
+            <p>Bật máy lạnh ở nhiệt độ quá thấp: Khi trời nắng nóng, nhiều người luôn mong muốn căn phòng sẽ nhanh chóng mát lạnh nên sẽ bật nhiệt độ rất thấp.</p>
+            <p>Tuy nhiên, cách làm này làm điều hòa sử dụng hết công suất khiến máy nhanh hỏng hơn, tốn tiền điện hơn.</p>
+            <p>Mở máy điều hòa 24/24: Mùa hè oi bức khiến nhiều người thường có thói quen mở máy điều hòa suốt ngày đêm.</p>
+            <p>Nhưng cách này không chỉ gây lãng phí điện, mà còn gây hại đến sức khỏe.</p>
+            <p>Lắp đặt điều hòa không đúng chỗ: Nhiều người tin rằng lắp đặt máy lạnh ở khu vực nóng nhất phòng, thậm chí là trong góc tường sẽ giúp nhanh chóng giảm nhiệt và tạo không khí thoáng mát cho căn phòng.</p>
+            <p>Nhưng quan niệm này là hoàn toàn sai lầm bởi sẽ khiến điều hòa vận hành quá tải và chạy tốn điện hơn bình thường.</p>
+            <p>Không bảo trì, vệ sinh máy thường xuyên: Nếu trong thời gian dài sử dụng, chắc chắn sẽ khiến điều hòa nhanh bị bám bụi, hỏng hóc và tốn điện hơn.</p>
+            <p>Vệ sinh máy lạnh không chỉ mang lại nguồn không khí thoáng mát, sạch sẽ mà còn giúp bạn giữ và tăng tuổi thọ của máy hơn.</p>
+            <p>Bạn nghĩ rằng thuê dịch vụ sửa máy lạnh, vệ sinh máy lạnh tốn nhiều chi phí và không cần thiết nhưng bạn hãy nghĩ đến tác dụng và tác hại của nó khi không được vệ sinh đúng cách.</p>
+            <p>Lúc đó máy sẽ hư tổn nặng và chi phí tốn gấp nhiều lần.</p>
+            <p>Sử dụng máy lạnh thời gian liên tục 7-8 tiếng thì nên cho máy dừng khoảng 1-2h đồng hồ.</p>
+            <p>Tuân thủ đúng hướng dẫn chỉ dẫn của các nhà sản xuất trên từng dòng máy lạnh.</p>
+            <p>Sử dụng nhiệt độ phù hợp từ 23-28 độ C để đảm bảo sức khỏe và độ bền của máy.</p>
+            <p>Sử dụng máy lạnh nên đóng cửa lại để nhiệt độ không lọt ra ngoài.</p>
+            <p>Khi không sử dụng nên mở cửa ra cho thoáng không khí phòng.</p>
+            <p>Nên cắt nguồn điện khi không sử dụng máy lạnh để tránh tình trạng chập cháy.</p>
+            <p>Nên có lịch bảo hành vệ sinh máy lạnh định kỳ để đảm bảo cho máy hoạt động tốt.</p>
+            <p>Khoảng 3-6 tháng là phù hợp.</p>
+            </p>
+
+            <img src="../img/máy lạnh 4.jpg" alt="hình">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+
+            <h4>
+              Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
+              nước, bảo trì lắp đặt nâng cấp thiết bị tại nhà, với phương châm:
+              Uy Tín - Chất Lượng - Giá Rẻ.
+            </h4>
+
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
+
+            <h3>Giờ làm việc</h3>
+            <h4>
+              <span> Thứ 2 - CN: </span>
+              08h00 - 21h00
+            </h4>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul>
+              <h1>Dịch vụ</h1>
+              <li>Dịch vụ sửa chữa điện</li>
+              <li>Dịch vụ sửa đường ống nước</li>
+              <li>Dịch vụ sửa máy bơm tại nhà</li>
+              <li>Dịch vụ sửa chữa điện lạnh</li>
+              <li>Dịch vụ sửa chữa nhà</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <h1>Liên hệ tư vấn</h1>
+            <h1>0837 857 277</h1>
+            <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
+
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
+          </div>
+        </div>
+      </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
+    </footer>
+
+
+    <script src="../javascript/js cho page con.js"></scrip>
+  </body>
+</html>

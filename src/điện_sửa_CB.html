@@ -23,16 +23,27 @@
             <div class="header_1_menu">
               <div class="row align-self-center mt-5">
                 <div class="col-md-4">
-                  <h1 id="logo">Tuấn Đạt</h1>
+                  <!-- <h1 id="logo">Tuấn Đạt</h1> -->
+                  <a href="../index.html">
+                    <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
+                  </a>
                 </div>
 
                 <div class="col-md-5 justify-content-end">
                   <nav class="navbar">
-                    <a class="nav-link">Sửa điện</a>
-                    <a class="nav-link">Sửa nước</a>
-                    <a class="nav-link">Sửa chữa nhà</a>
-                    <a class="nav-link">Thông nghẹt</a>
-                    <a class="nav-link">Điện lạnh</a>
+                    <a href="../index.html#sua_dien" class="nav-link">Sửa điện</a>
+                    <a href="../index.html#sua_nuoc" class="nav-link"
+                      >Sửa nước</a
+                    >
+                    <a href="../index.html#sua_bom" class="nav-link"
+                      >Sửa máy bơm</a
+                    >
+                    <a href="../index.html#thong_nghet" class="nav-link"
+                      >Thông nghẹt</a
+                    >
+                    <a href="../index.html#dien_lanh" class="nav-link"
+                      >Điện lạnh</a
+                    >
                   </nav>
 
                   <br />
@@ -43,11 +54,32 @@
                 </div>
 
                 <div class="col-md-3">
-                  <button class="btn header_1_btn_phone">0837 857 277</button>
+                  <button onclick="makeCall()" class="btn header_1_btn_phone">
+                    0837 857 277
+                  </button>
+                  <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a
+                  >
                   <br />
-                  <i class="bx bxl-facebook-circle"></i>
-                  <i class="bx bxl-messenger"></i>
-                  <i class="bx bxs-phone-call"></i>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100008293312786"
+                  >
+                    <i class="bx bxl-messenger"></i>
+                  </a>
+
+                  <a
+                    href="https://zalo.me/0837857277"
+                    class="zalo-link"
+                    target="_blank"
+                    title="Liên hệ qua Zalo"
+                  >
+                    <i class="bx bxs-phone-call"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,13 +89,83 @@
 
       <section>
         <div class="header_2">
-          <img
-            src="https://media.istockphoto.com/id/1345962789/vi/anh/k%E1%BB%B9-s%C6%B0-th%E1%BB%A3-%C4%91i%E1%BB%87n-s%E1%BB%AD-d%E1%BB%A5ng-m%E1%BB%99t-v%E1%BA%A1n-n%C4%83ng-%C4%91%E1%BB%83-ki%E1%BB%83m-tra-c%C3%A0i-%C4%91%E1%BA%B7t-%C4%91i%E1%BB%87n-v%C3%A0-d%C3%B2ng-%C4%91i%E1%BB%87n-trong-t%E1%BB%A7-%C4%91i%E1%BB%81u-khi%E1%BB%83n.webp?s=2048x2048&w=is&k=20&c=oZtlSYMDAYGRRqifOqgQe10sMZDHFokXanI8fYS0Mnc="
-            alt="Các dịch vụ sửa chữa của Tuấn Đạt"
-          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Lắp đặt sửa chữa điện nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa-Lắp đặt máy bơm nước
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Thông tắc cầu cống 24/7
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+
+                  Sửa chữa điện lạnh tại nhà
+                </h2>
+
+                <h2>
+                  <i class="bx bxs-check-square"></i>
+                  Sửa chữa cải tạo nhà cửa
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <div class="header_2_1">
+                  <img
+                    src="../img/dien-nhanh-24h-bao-tri-dien-nuoc-tai-nha-can-tho-191-1024x684.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+
+    <div class="header_mobile">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <!-- Logo -->
+        <img src="../img/logo mẫu của khỉ.png" alt="Logo" class="logo" />
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../index.html#sua_dien">Sửa điện</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#sua_nuoc"
+                >Sửa nước</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="../index.html#sua_bom">Sửa máy bơm</a></li>
+            <li>
+              <a class="dropdown-item" href="../index.html#thong_nghet">Thông nghẹt</a>
+            </li>
+            <li><a class="dropdown-item" href="../index.html#dien_lanh">Điện lạnh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------------------------------------------------------------- -->
 
@@ -71,41 +173,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                  <h1>Lắp đặt, sửa chữa Bóng đèn, ổ cắm, CB, cầu dao… tại Tp. HCM</h1>
+                  <h1>Lắp đặt, sửa chữa Bóng đèn, ổ cắm, CB, cầu dao… </h1>
         
                   <p>
-                    Fisthome là đơn vị uy tín lắp đặt các thiết bị công tắc ổ cắm CB cầu
+                    Tuấn Đạt là đơn vị uy tín lắp đặt các thiết bị công tắc ổ cắm CB cầu
                     dao hiện đại, giá rẻ, đảm bảo tính thẩm mỹ. Bạn/ gia đình đang sinh
-                    sống và làm việc tại Thành phố HCM và có nhu cầu muốn lắp một vài
+                    sống và làm việc tại Thành phố HCM, Bình Dương và có nhu cầu muốn lắp một vài
                     thiết bị công tắc ổ cắm cho không gian nhà mình hoặc cho văn phòng,
-                    công ty nơi bạn làm việc? Hãy liên hệ ngay với Fisthome – đơn vị sữa
+                    công ty nơi bạn làm việc? Hãy liên hệ ngay với Tuấn Đạt – đơn vị sữa
                     chữa điện nước số 1 tại Việt Nam.
                   </p>
         
-                  <h3>Gọi ngay Fisthome 090.262.0338 Khi cần tư vấn lắp đặt</h3>
+                  <h3>Gọi ngay Fisthome 0837 857 277 Khi cần tư vấn lắp đặt</h3>
         
                   <h3>
                     Nhận lắp đặt thiết bị công tắc – ổ cắm – thiết bị điện dân dụng
                   </h3>
         
                   <p>
-                    Fisthome nhận lắp đặt các thiết bị công tắc – ổ cắm – aptomat với
-                    các tiêu chí sau: Đặt nơi khô ráo, thoáng mát, tránh tầm với tay của
-                    trẻ nhỏ Ổ cắm được lắp đặt thường đặt cách xa mặt đất tầm 0,3 – 0,5m
-                    Hệ thống điện dau sau khi thi công đảm bảo thuận tiện cho việc sử
+                    <p>
+                    Tuấn Đạt nhận lắp đặt các thiết bị công tắc – ổ cắm – aptomat với
+                    các tiêu chí sau: </p>
+                    <p>Đặt nơi khô ráo, thoáng mát, tránh tầm với tay của
+                    trẻ nhỏ Ổ cắm được lắp đặt thường đặt cách xa mặt đất tầm 0,3 – 0,5m</p>
+                    <p>
+                    Hệ thống điện sau khi thi công đảm bảo thuận tiện cho việc sử
                     dụng các thiết bị điện trong gia đình Để đáp ứng nhu cầu chung của
                     nhiều khách hàng đang muốn thuê thợ lắp đặt thiết bị công tắc ổ cắm
-                    tại TPHCM về để sử dụng các thiết bị điện trong nhà, gia đình, văn
-                    phòng,… Công ty chúng tôi có đội ngũ thợ lắp đặt tận nơi giá tốt, có
+                   về để sử dụng các thiết bị điện trong nhà, gia đình, văn
+                    phòng,… </p>
+                    <p>Chúng tôi có đội ngũ thợ lắp đặt tận nơi giá tốt, có
                     nhân viên đến khảo sát tư vấn chỉ sau cuộc gọi điện của khách hàng.
                     Chúng tôi hỗ trợ kỹ thuật tại nhà theo yêu cầu của khách hàng, có
                     đầy đủ thiết bị hiện đại, thống nhất những phương án khả thi trước
                     khi tiến hành lắp đặt. Làm đạt yêu cầu, đúng như cam kết mới an tâm
                     nhận tiền.
+                    </p>
                   </p>
         
                   <img
-                    src="https://fisthome.vn/wp-content/uploads/2023/05/cong-ty-sua-chua-dien.jpg"
+                    src="../img/c113d614c49b61c5388a22.jpg"
                   />
                 </div>
               </div>
@@ -113,43 +220,64 @@
               <div class="row">
                 <div class="col-md-12">
                   <h1>
-                    Thợ lắp đặt công tắc – ổ cắm – tủ điện dân dụng tại Hồ Chí Minh
+                    Thợ lắp đặt công tắc – ổ cắm – tủ điện dân dụng 
                   </h1>
         
                   <h3>Uy tín – Chất lượng</h3>
                   <p>
-                    Chất lượng sửa chữa điện đảm bảo: Đội ngũ thợ sửa chữa điện chuyên
-                    nghiệp, trình độ cao của Fisthome có khả năng xử lý mọi vấn đề liên
-                    quan đến thiết bị điện một cách triệt để. Đảm bảo an toàn trước,
-                    trong và sau khi sửa chữa điện mang lại sự yên tâm cho khách hàng.
-                    Đảm bảo thời gian sửa chữa: Với nhiều năm trong nghề, trang thiết bị
+                    <p>
+                    Chất lượng sửa chữa điện đảm bảo:</p>
+                    <p> Đội ngũ thợ sửa chữa điện chuyên
+                    nghiệp, trình độ cao của Tuấn Đạt có khả năng xử lý mọi vấn đề liên
+                    quan đến thiết bị điện một cách triệt để. </p>
+                    <p>Đảm bảo an toàn trước,
+                    trong và sau khi sửa chữa điện mang lại sự yên tâm cho khách hàng.</p>
+                    <p>
+                    Đảm bảo thời gian sửa chữa:</p>
+                     Với nhiều năm trong nghề, trang thiết bị
                     hiện đại chúng tôi nắm bắt điểm “mấu chốt” nguyên nhân hư hỏng điện
-                    nhanh và chính xác. Từ đó đưa ra phương án giải quyết vấn đề của
-                    khách hàng trong thời gian ngắn nhất có thể. Tư vấn miễn phí về sửa
-                    điện nước: Chúng tôi luôn sẵn sàng tư vấn nhiệt tình cho khách hàng
+                    nhanh và chính xác.</p>
+                    <p> Từ đó đưa ra phương án giải quyết vấn đề của
+                    khách hàng trong thời gian ngắn nhất có thể. </p>
+                    <p>Tư vấn miễn phí về sửa
+                    điện nước: </p>
+                    <p>Chúng tôi luôn sẵn sàng tư vấn nhiệt tình cho khách hàng
                     về mọi vấn đề về điện nước. Mọi dịch vụ chúng tôi đưa ra đều nhằm
                     xây dựng một môi trường sống an toàn và chất lượng cho người dân.
+                    </p>
+
                   </p>
         
                   <h3>Chi phí cạnh tranh – Minh bạch</h3>
         
                   <p>
-                    Giá cả cạnh tranh, toàn bộ đều là mức giá bình dân: Fisthome đưa ra
-                    mức giá cạnh tranh so với các đơn vị sửa chữa điện trên thị trường.
+                    <p>
+                    Giá cả cạnh tranh, toàn bộ đều là mức giá bình dân: Tuấn Đạt đưa ra
+                    mức giá cạnh tranh so với các đơn vị sửa chữa điện trên thị trường.</p>
+                    <p>
                     Hi vọng tất cả các hộ gia đình đều có thể sử dụng dịch vụ của
-                    Fisthome với mức giá bình ổn nhất. Không phát sinh chi phí sau sửa
-                    chữa: Mọi giao dịch và giá cả đều được Fisthome ghi cụ thể trên hợp
-                    đồng, chúng tôi cam kết không phát sinh phụ phí bên ngoài. Trường
+                    Tuấn Đạt với mức giá bình ổn nhất. Không phát sinh chi phí sau sửa
+                    chữa: </p>
+                    <p>
+                    Mọi giao dịch và giá cả đều được Tuấn Đạt ghi cụ thể trên hợp
+                    đồng, chúng tôi cam kết không phát sinh phụ phí bên ngoài. </p>
+                    <p>Trường
                     hợp xảy ra sự cố phát sinh phải được chủ đầu tư đồng ý thi công Thái
-                    độ nhân viên vui vẻ, chuyên nghiệp: Với tiêu chí “khách hàng là
+                    độ nhân viên vui vẻ, chuyên nghiệp:</p>
+                     Với tiêu chí “khách hàng là
                     bạn”, nhân viên của chúng tôi giữ thái độ thân thiện và vui vẻ trong
                     quá trình tư vấn, tiến hành công việc sửa chữa điện tại nhà. Hỗ trợ
-                    về sửa chữa điện nước 24/7: Không quản ngại mưa gió, cuối tuần nhay
-                    gày lễ hay tết, đội ngũ nhân viên của chúng tôi sẵn sàng phục vụ
-                    khách khi có nhu cầu. Hỗ trợ bảo hành, bảo trì các thiết bị điện
-                    nước: Chúng tôi hỗ trợ bảo hành, bảo trì định kỳ cho khách hàng sau
+                    về sửa chữa điện nước 24/7: </p>
+                    <h3>Không quản ngại mưa gió, cuối tuần hay
+                    ngày lễ tết, đội ngũ nhân viên của chúng tôi sẵn sàng phục vụ
+                    khách khi có nhu cầu.</h3>
+                    <h3> Hỗ trợ bảo hành, bảo trì các thiết bị điện
+                    nước:</h3>
+                    <p> Chúng tôi hỗ trợ bảo hành, bảo trì định kỳ cho khách hàng sau
                     khi đã tiến hành sửa chữa. Tùy theo hạng mục mà có những chính sách
                     riêng biệt đảm bảo quyền lợi cho khách ( từ 3 tháng đến 3 năm )
+                    </p>
+
                   </p>
                 </div>
               </div>
@@ -173,9 +301,9 @@
                   <h3>Dịch vụ lắp đặt điện 3 pha</h3>
         
                   <p>
-                    Với đường điện 3 pha dành cho dân dụng cũng như sản xuất, không phải
-                    đơn vị thi công điện nào cũng đáp ứng được. Đội thi công điện 3 pha
-                    của 1FIX™ bao gồm nhiều thành viên có kinh nghiệm từ việc thi công
+                    Với đường điện 3 pha dành cho dân dụng cũng như sản xuất.
+                     Đội thi công điện 3 pha
+                    của Tuấn Đạt bao gồm nhiều thành viên có kinh nghiệm từ việc thi công
                     điện lưới, các nhân sự chuyên về thiết kế tủ điện, thi công tủ
                     điện…sẽ đáp ứng được nhu cầu đặc thù của quý khách.
                   </p>
@@ -183,16 +311,24 @@
                   <h3>Dịch vụ lắp đặt, đi dây điện âm tường</h3>
         
                   <p>
+                    <p>
                     Thông thường, khách hàng sẽ sử dụng dịch vụ đi dây điện âm tường
-                    trong các trường hợp như: Đường dây âm tường bị chập điện và không
-                    sử dụng lại được nữa. Phát sinh nhu cầu lắp đặt dây điện âm tường
-                    đến một vị trí mới mà trước đây chưa có. Nhu cầu âm tường các dây
+                    trong các trường hợp như:</p>
+                    <p> Đường dây âm tường bị chập điện và không
+                    sử dụng lại được nữa.
+                    </p>
+                    <p> Phát sinh nhu cầu lắp đặt dây điện âm tường
+                    đến một vị trí mới mà trước đây chưa có.</p>
+                    <p> Nhu cầu âm tường các dây
                     điện nổi hiện có vì lý do an toàn hoặc thẩm mỹ Lắp đặt toàn bộ hệ
-                    thống điện âm tường cho nhà đang thi công theo bảng vẽ. Fisthome –
+                    thống điện âm tường cho nhà đang thi công theo bảng vẽ. </p>
+                    <p>Tuấn Đạt –
                     Giải pháp dẫn đầu trên thị trường cho các vấn đề lắp đặt các thiết
                     bị công tắc, ổ cắm, CB, cầu dao, sửa chữa điện nước, bảo trì lắp đặt
                     nâng cấp thiết bị tại nhà, với phương châm: Uy Tín – Chất Lượng –
                     Giá Rẻ.
+                    </p>
+
                   </p>
                 </div>
               </div>
@@ -205,7 +341,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 id="logo">Tuấn Đạt</h1>
+            <img id="img_logo" src="../img/logo mẫu của khỉ 2k.png" />
 
             <h4>
               Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện
@@ -213,7 +349,9 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> đường nào, phố nào, Bình Dương.</h4>
+            <h4><span>Địa chỉ:</span> 
+             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            </h4>
 
             <h3>Giờ làm việc</h3>
             <h4>
@@ -222,7 +360,7 @@
             </h4>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <ul>
               <h1>Dịch vụ</h1>
               <li>Dịch vụ sửa chữa điện</li>
@@ -233,17 +371,31 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mt-5">
             <h1>Liên hệ tư vấn</h1>
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <a id="callLink" href="tel:+84837857277" style="display: none"
+                    >Call</a>
           </div>
         </div>
       </div>
+
+      <a
+      style="color: white; text-decoration: none;"
+      href="https://zalo.me/0386522594"
+      class="zalo-link"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+    <p id="design">Designed by Thanh Hau</p>
+
+    </a>
     </footer>
 
-    <script src="../javascript/index.js"></script>
+
+    <script src="../javascript/js cho page con.js"></script>
   </body>
 </html>
