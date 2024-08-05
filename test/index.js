@@ -1,26 +1,7 @@
-
-function loadHTML(elementId, fileName) {
-  const element = document.getElementById(elementId);
-
-  if (!element) {
-    console.error(`Không tìm thấy phần tử với ID: ${elementId}`);
-    return;
-  }
-
-  fetch(fileName)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then((data) => {
-      element.innerHTML = data;
-    })
-    .catch((error) => console.error("Lỗi khi tải file:", error));
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  loadHTML("header", "header.html");
-  loadHTML("footer", "footer.html");
+ScrollReveal().reveal('.row', {
+  duration: 500, // Thời gian hiệu ứng (ms)
+  origin: 'bottom', // Xuất hiện từ phía dưới
+  distance: '120px', // Khoảng cách di chuyển
+  easing: 'ease-in-out', // Đường cong chuyển động
+  reset: true // Tái kích hoạt hiệu ứng khi cuộn lại
 });

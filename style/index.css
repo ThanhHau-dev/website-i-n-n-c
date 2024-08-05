@@ -519,6 +519,7 @@ table td {
         background-color: var(--colorCenter);
         color: white;
         height: 250px;
+        margin-top: 100px;
     }
 
     .header_2 h2 {
@@ -542,7 +543,8 @@ table td {
         width: 100%;
         background-color: white;
         text-transform: uppercase;
-        
+        position: fixed;
+        top: 0;
     }
 
 
@@ -638,4 +640,68 @@ table td {
             transform: translateX(100px); /* Di chuyển sang phải 20px */
         }
     }
+}
+
+
+
+/* nút gọi */
+.floating-call-button {
+    position: fixed; /* Đặt vị trí cố định để nút luôn ở một vị trí cụ thể */
+    bottom: 200px; /* Cách đáy màn hình 20px */
+    left: 20px; /* Cách trái màn hình 20px */
+    background-color: none; /* Màu nền xanh lá */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ a */
+    border: none; /* Không có viền */
+    border-radius: none; /* Bo tròn góc */
+    padding: none; /* Khoảng đệm bên trong nút */
+    font-size: 40px; /* Kích thước chữ */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    animation: shake 0.5s infinite; /* Áp dụng hiệu ứng lắc lư liên tục */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+
+/* Định nghĩa keyframes cho hiệu ứng rung lắc */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+.floating-call-button1 {
+    height: 70px;
+    width: 70px;
+    position: fixed; /* Đặt vị trí cố định để nút luôn ở một vị trí cụ thể */
+    bottom: 100px; /* Cách đáy màn hình 20px */
+    left: 20px; /* Cách trái màn hình 20px */
+    background-color: var(--colorCenter); /* Màu nền xanh lá */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ a */
+    border: none; /* Không có viền */
+    border-radius: 50px; /* Bo tròn góc */
+    padding: 5px; /* Khoảng đệm bên trong nút */
+    font-size: 50px; /* Kích thước chữ */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    animation: shake 0.5s infinite; /* Áp dụng hiệu ứng lắc lư liên tục */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+
+/* Định nghĩa keyframes cho hiệu ứng rung lắc */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
 }

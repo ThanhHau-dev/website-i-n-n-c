@@ -13,7 +13,7 @@
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Tuấn Đạt" />
-    <link rel="icon" href="/img/icon.webp" type="image/x-icon">
+    <link rel="icon" href="/img/icon.webp" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,10 +22,8 @@
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />  
+    />
     <link rel="stylesheet" href="./style/index.css" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 
     <title>Sửa chữa điện nước</title>
   </head>
@@ -92,8 +90,6 @@
           </div>
         </div>
       </section>
-
-     
     </header>
 
     <div class="header_mobile">
@@ -124,7 +120,6 @@
         </div>
       </div>
     </div>
-
 
     <section>
       <div class="header_2">
@@ -326,7 +321,9 @@
 
               <div class="row" style="text-align: center">
                 <div class="col-md-12">
+                  <a href="src/dv_sửa_điện_chập.html">
                   <button class="main_2_btn btn">Xem tất cả</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -462,7 +459,10 @@
 
               <div class="row" style="text-align: center">
                 <div class="col-md-12">
+                  <a href="src/nước_rò_rỉ.html">
                   <button class="main_2_btn btn">Xem tất cả</button>
+
+                  </a>
                 </div>
               </div>
             </div>
@@ -573,7 +573,11 @@
 
               <div class="row" style="text-align: center">
                 <div class="col-md-12">
+                  <a href="src/bơm_chập.html">
+
                   <button class="main_2_btn btn">Xem tất cả</button>
+
+                  </a>
                 </div>
               </div>
             </div>
@@ -695,7 +699,10 @@
 
               <div class="row" style="text-align: center">
                 <div class="col-md-12">
+                  <a href="src/thông_nghẹt_4.html">
                   <button class="main_2_btn btn">Xem tất cả</button>
+
+                  </a>
                 </div>
               </div>
             </div>
@@ -814,7 +821,9 @@
 
               <div class="row" style="text-align: center">
                 <div class="col-md-12">
+                  <a href="src/máy_lạnh_1.html">
                   <button class="main_2_btn btn">Xem tất cả</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -832,7 +841,10 @@
           để được tư vấn nhanh nhất!
         </p>
 
-        <button class="btn main_3_btn">Gọi ngay dịch vụ</button>
+        <button onclick="makeCall()" class="btn main_3_btn">Gọi ngay dịch vụ</button>
+        <a id="callLink" href="tel:+84837857277" style="display: none"
+        >Call</a
+      >
       </div>
 
       <div class="main_4">
@@ -1055,9 +1067,25 @@
       </div>
     </div>
 
+
+    <a
+      href="https://zalo.me/0837857277"
+      class="floating-call-button"
+      target="_blank"
+      title="Liên hệ qua Zalo"
+    >
+      <img src="img/7044033_zalo_icon.png">
+    </a>
+
+
+    <a onclick="makeCall()" href="tel:+84837857277" class="floating-call-button1">
+      <i class='bx bxs-phone-call'></i>
+  </a>
+  
+
+
     <!-- ----------------------------------------------------------------------- -->
 
-   
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -1070,8 +1098,10 @@
               Uy Tín - Chất Lượng - Giá Rẻ.
             </h4>
 
-            <h4><span>Địa chỉ:</span> 
-             159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An, Bình Dương.
+            <h4>
+              <span>Địa chỉ:</span>
+              159/8 Nguyễn Du, khu phố Đông Tân,phường Dĩ An, thành phố Dĩ An,
+              Bình Dương.
             </h4>
 
             <h3>Giờ làm việc</h3>
@@ -1097,26 +1127,26 @@
             <h1>0837 857 277</h1>
             <p>Trò chuyện trực tiếp cùng kỹ thuật viên</p>
 
-            <button onclick="makeCall()" class="btn btn-danger">Liên hệ ngay</button>
+            <button onclick="makeCall()" class="btn btn-danger">
+              Liên hệ ngay
+            </button>
             <a id="callLink" href="tel:+84837857277" style="display: none"
-                    >Call</a>
+              >Call</a
+            >
           </div>
         </div>
       </div>
 
       <a
-      style="color: white; text-decoration: none;"
-      href="https://zalo.me/0386522594"
-      class="zalo-link"
-      target="_blank"
-      title="Liên hệ qua Zalo"
-    >
-    <p id="design">Designed by Thanh Hau</p>
-
-    </a>
+        style="color: white; text-decoration: none"
+        href="https://zalo.me/0386522594"
+        class="zalo-link"
+        target="_blank"
+        title="Liên hệ qua Zalo"
+      >
+        <p id="design">Designed by Thanh Hau</p>
+      </a>
     </footer>
-
-
 
     <script src="./javascript/index.js"></script>
   </body>
