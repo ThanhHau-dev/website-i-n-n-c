@@ -12,6 +12,37 @@
   });
 
 
+
+/*-------------------------------------------------------------------------------------- */
+// Thêm chữ cho header
+  // Lấy thẻ h3 đầu tiên trong class header_1_menu
+  const h3Element = document.querySelector('.header_1_menu h3');
+
+  // Kiểm tra xem thẻ h3 có tồn tại không
+  if (h3Element) {
+      // Thay đổi nội dung của thẻ h3
+      h3Element.textContent = 'dịch vụ sửa chữa - lắp đặt điện nước tại nhà';
+  }
+
+
+// Thêm chữ cho phần header_2
+const header2 = document.querySelector('.header_2 .col-md-6');
+
+// Lấy tất cả các thẻ h2 trong phần tử này
+const h2Elements = header2.querySelectorAll('h2');
+
+// Tạo thẻ h3 mới
+const newH3 = document.createElement('h3');
+newH3.textContent = 'DỊCH VỤ SỬA CHỮA- LẮP ĐẶT ĐIỆN NƯỚC TẠI NHÀ';
+
+// Thêm thẻ h3 vào sau thẻ h2 cuối cùng
+if (h2Elements.length > 0) {
+    header2.appendChild(newH3);
+}
+
+newH3.style.fontWeight = 'bold';
+
+
 /*------------------------------------------------------------------------------------- */
 // Nút gọi điện thoại
 
@@ -33,7 +64,7 @@ function makeCall() {
 
 
 // Tạo hiệu ứng bằng thư viện ScrollReveal
-
+/*
     // Hiệu ứng cho class row
     ScrollReveal().reveal('.main .row', {
       duration: 500, // Thời gian hiệu ứng (ms)
@@ -69,5 +100,5 @@ function makeCall() {
       easing: 'ease-in-out', // Đường cong chuyển động
       reset: false // Tái kích hoạt hiệu ứng khi cuộn lại
   });
-
+*/
 /*----------------------------------------------------------------------- */

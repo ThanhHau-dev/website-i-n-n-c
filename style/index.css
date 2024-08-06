@@ -135,6 +135,11 @@ a{
     margin-top: 20px;
 }
 
+.header_2 h3 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 
 
 /* .header_2 img {
@@ -393,6 +398,10 @@ table td {
             width: 100%;
         }
 
+        .header_2 {
+            height: 800px;
+        }
+
         .header_2_1 img {
             margin-top: 200px;
         }
@@ -442,6 +451,10 @@ table td {
 
     .header_1_menu i {
         font-size: 40px;
+    }
+
+    .header_2 {
+        height: 750px;
     }
 
     .header_2 h2 {
@@ -520,9 +533,14 @@ table td {
         color: white;
         height: 250px;
         margin-top: 100px;
+        height: 320px;
     }
 
     .header_2 h2 {
+        font-size: 13px;
+    }
+
+    .header_2 h3 {
         font-size: 15px;
     }
 

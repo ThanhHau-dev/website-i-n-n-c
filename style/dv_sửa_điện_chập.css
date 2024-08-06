@@ -82,7 +82,7 @@ body {
 }
 
 .header_2 {
-    padding-top: 300px;
+    padding-top: 250px;
     background-color: var(--colorCenter);
     color: white;
     height: 700px;
@@ -191,6 +191,10 @@ body {
         width: 100%;
     }
 
+    .header_2 {
+        height: 800px;
+    }
+
     .header_2_1 img {
         margin-top: 200px;
     }
@@ -238,6 +242,10 @@ body {
 
 .header_1_menu i {
     font-size: 40px;
+}
+
+.header_2 {
+    height: 750px;
 }
 
 .header_2 h2 {
