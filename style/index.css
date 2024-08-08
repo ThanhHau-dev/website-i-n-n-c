@@ -135,11 +135,6 @@ a{
     margin-top: 20px;
 }
 
-.header_2 h3 {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
 
 
 /* .header_2 img {
@@ -542,6 +537,7 @@ table td {
 
     .header_2 h3 {
         font-size: 15px;
+        font-weight: bold;
     }
 
     .header_2_1 img{

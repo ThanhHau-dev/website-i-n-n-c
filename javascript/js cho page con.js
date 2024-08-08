@@ -25,22 +25,40 @@
   }
 
 
-// Thêm chữ cho phần header_2
-const header2 = document.querySelector('.header_2 .col-md-6');
+// Lấy phần tử .header_2 .container .row
+const header2 = document.querySelector('.header_2 .container .row');
 
-// Lấy tất cả các thẻ h2 trong phần tử này
-const h2Elements = header2.querySelectorAll('h2');
+// Lấy tất cả các phần tử .col-md-6 trong .row
+const colmd6 = header2.querySelectorAll('.col-md-6');
 
-// Tạo thẻ h3 mới
-const newH3 = document.createElement('h3');
-newH3.textContent = 'DỊCH VỤ SỬA CHỮA- LẮP ĐẶT ĐIỆN NƯỚC TẠI NHÀ';
+// Kiểm tra nếu có phần tử .col-md-6
+if (colmd6.length > 0) {
+    // Lấy phần tử .col-md-6 cuối cùng
+    const lastColMd6 = colmd6[colmd6.length - 1];
 
-// Thêm thẻ h3 vào sau thẻ h2 cuối cùng
-if (h2Elements.length > 0) {
-    header2.appendChild(newH3);
+    // Tạo thẻ h3 mới
+    const newH3 = document.createElement('h3');
+    newH3.textContent = 'DỊCH VỤ SỬA CHỮA - LẮP ĐẶT ĐIỆN NƯỚC TẠI NHÀ';
+    newH3.style.fontWeight = 'bold';
+
+    // Thêm thẻ h3 vào sau phần tử .col-md-6 cuối cùng
+    lastColMd6.after(newH3);
 }
 
-newH3.style.fontWeight = 'bold';
+/*
+document.addEventListener("DOMContentLoaded", function() {
+    // Lấy phần tử .row
+    const rowElement = document.querySelector('.header_2 .container .row');
+
+    // Tạo thẻ H3 mới
+    const newH3 = document.createElement('h3');
+    newH3.textContent = 'Dịch vụ nhanh chóng và chuyên nghiệp';
+
+    // Thêm thẻ H3 vào trong .row
+    rowElement.appendChild(newH3);
+
+    newH3.style.fontWeight = 'bold';
+});
 
 
 /*------------------------------------------------------------------------------------- */
