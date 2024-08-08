@@ -124,6 +124,10 @@ a{
     font-size: 85px;
 }
 
+#callme{
+    display: none;
+}
+
 .header_2 {
     padding-top: 300px;
     background-color: var(--colorCenter);
@@ -529,6 +533,12 @@ table td {
         height: 250px;
         margin-top: 100px;
         height: 320px;
+    }
+
+    #callme {
+        display: block;
+        margin-top: 14px;
+        margin-left: 15%;
     }
 
     .header_2 h2 {
